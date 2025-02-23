@@ -1,0 +1,97 @@
+.footer-header-color {
+    background-color: var(--footer-background-color);
+    color: var(--footer-text-color);
+  }
+
+  .bio-font {
+    font-family: 'Helvetica';
+    font-weight: 100;
+  }
+  .font-color-class {
+    color: var(--blue-text-color); /* Replace #0000ff with the color of your choice */
+  }
+
+  .heading-responsive-font {
+    font-size: clamp(2rem, 4vw, 3rem);
+  }
+  
+  .custom-border {
+    border: none; /* Initial border color set to transparent */
+    }
+  
+  
+.custom-border:focus {
+border: none; /* No border when focused */
+outline: none; /* Remove default outline */
+box-shadow: none; /* Remove any shadow effects that may appear */
+}
+
+
+.form-control{
+        
+    background-color : var(--form-background-color);
+    color: var(--input-focus-text-color);
+    
+    }
+    
+.custom-placeholder::placeholder{
+
+color: var( --text-color)
+
+}
+
+.button-custom-color {
+    background-color: var(--light-blue);
+    border-color:var(--light-blue);
+    color: var(--button-text-color) !important;
+    transition: none; /* Prevent animation during state changes */
+}
+
+.button-custom-color:hover {
+    background-color: var(--button-hover);
+    border-color: var(--button-hover);
+    color: var(--button-text-hover-color) !important ; /* Font color on hover */
+}
+
+/* Prevent color change on click */
+.button-custom-color:active,
+.button-custom-color:focus {
+    background-color: var(--button-hover) !important; /* Same as hover */
+    border-color:var(--button-hover) !important;
+    color: var(--button-text-hover-color) !important;
+    /* Remove focus/active shadow */
+    /* Remove focus outline */
+}
+
+    
+    
+.form-control:focus {
+background-color: var(--input-focus-background-color);
+color: var(--input-focus-text-color);
+
+}  
+
+
+
+.copyright
+{   text-decoration: none;
+    color: var(--text-color);}
+
+.copyright:hover{
+  text-decoration: none;
+  color:var(--nav-brand-hover-color);
+}
+
+.message-inp {
+    height: 200px;
+    text-align: left; /* Align text to the left */
+    vertical-align: top; /* Align placeholder to the top */
+    padding: 10px; /* Add padding to give space around the text */
+    resize: none; /* Optional: Prevent resizing if not needed */
+}
+
+.message-inp::placeholder {
+    text-align: left; /* Align placeholder text to the left */
+    vertical-align: top; /* Align placeholder text to the top */
+}
+
