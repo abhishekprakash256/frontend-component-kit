@@ -1,4 +1,5 @@
 export { default as ArticleImage } from './components/ArticleImage';
+export { default as CardTemp } from './components/Card';
 export { default as CardBundle } from './components/CardBundle';
 export { default as CustomBody } from './components/CustomBody';
 export { default as Footer } from './components/Footer';
