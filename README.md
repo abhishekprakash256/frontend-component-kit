@@ -38,6 +38,8 @@ export default tseslint.config({
 ```bash
 npm run build
 
+tsc -b  #to build the dist files
+
 npm run dev
 
 ```
