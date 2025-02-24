@@ -2,7 +2,7 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 import '../styles/style.css'; // the custom import file
 import '../styles/Card.css'; // the custom import file
-import Card from "./Card";
+import CardTemp from "./CardTemp";
 
 interface CardData {
   card_title: string;
@@ -43,7 +43,7 @@ const CardBundle: React.FC = () => {
     <Row>
       {cardData.map((card, index) => (
         <Col key={index} xs={12} sm={12} md={4} className="mt-3">
-          <Card
+          <CardTemp
             card_title={card.card_title} 
             card_para={card.card_para} 
             img_src={card.img_src} 

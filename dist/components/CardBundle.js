@@ -2,7 +2,7 @@ import { jsx as _jsx } from "react/jsx-runtime";
 import { Row, Col } from "react-bootstrap";
 import '../styles/style.css'; // the custom import file
 import '../styles/Card.css'; // the custom import file
-import Card from "./Card";
+import CardTemp from "./CardTemp";
 const CardBundle = () => {
     const cardData = [
         {
@@ -30,6 +30,6 @@ const CardBundle = () => {
             card_url: "https://example.com/card4",
         },
     ];
-    return (_jsx(Row, { children: cardData.map((card, index) => (_jsx(Col, { xs: 12, sm: 12, md: 4, className: "mt-3", children: _jsx(Card, { card_title: card.card_title, card_para: card.card_para, img_src: card.img_src, card_url: card.card_url }) }, index))) }));
+    return (_jsx(Row, { children: cardData.map((card, index) => (_jsx(Col, { xs: 12, sm: 12, md: 4, className: "mt-3", children: _jsx(CardTemp, { card_title: card.card_title, card_para: card.card_para, img_src: card.img_src, card_url: card.card_url }) }, index))) }));
 };
 export default CardBundle;
