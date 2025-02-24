@@ -30,6 +30,29 @@ export default tseslint.config({
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
 
 ```js
+```
+
+
+### Commands 
+
+```bash
+npm run build
+
+npm run dev
+
+```
+
+### Install 
+
+```bash
+npm install git@github.com:abhishekprakash256/front-end-component-kit.git#branch  (if branch needed)
+```
+
+
+
+### install as 
+
+
 // eslint.config.js
 import react from 'eslint-plugin-react'
 
