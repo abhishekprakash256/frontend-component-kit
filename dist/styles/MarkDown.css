@@ -1,0 +1,32 @@
+.background-color-body {
+    background-color: var(--background-color); /* Replace #ff0000 with the color of your choice */
+  }
+
+  .font-color-class {
+    color: var(--blue-text-color); /* Replace #0000ff with the color of your choice */
+  }
+  
+.bio-desc
+{
+  font-family:Arial;
+  font-weight: 600;
+
+
+}
+
+.markdown-body code {
+   
+    color: var(--text-color); /* Distinct text color */
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+    font-family: monospace;
+  }
+  
+  .markdown-body pre {
+   
+    color: var(--text-color); /* Distinct text color */
+    padding: 1em;
+    border-radius: 4px;
+    overflow: auto;
+  }
+  

@@ -1,0 +1,136 @@
+
+.navbar-brand{
+    color: var(--navbar-brand-color);
+    
+  }
+  
+  .navbar-brand:hover
+  {
+    color: var(--nav-brand-hover-color) ;
+  }
+  
+  .bold {
+    font-weight: 600;
+  }  
+  
+  .navbar-brand.bold {  
+    font-size: 140%;
+  }
+  
+  .nav-link {
+    color: var(--nav-link-color) ;
+    margin-right: 5px;
+  }
+  
+  .nav-link:hover {
+    color: var(--nav-link-color) ;
+  }
+  
+  .footer-header-color {
+    background-color: var(--footer-background-color);
+    color: var(--footer-text-color);
+  }
+  
+  .custom-border {
+    border: none; /* Initial border color set to transparent */
+    }
+  
+  
+  .custom-border:focus {
+    border: none; /* No border when focused */
+    outline: none; /* Remove default outline */
+    box-shadow: none; /* Remove any shadow effects that may appear */
+    }
+  
+    .button-custom-color {
+      background-color: var(--light-blue);
+      border-color:var(--light-blue);
+      color: var(--button-text-color) !important;
+      transition: none; /* Prevent animation during state changes */
+  }
+  
+  .button-custom-color:hover {
+      background-color: var(--button-hover);
+      border-color: var(--button-hover);
+      color: var(--button-text-hover-color) !important ; /* Font color on hover */
+  }
+  
+  /* Prevent color change on click */
+  .button-custom-color:active,
+  .button-custom-color:focus {
+      background-color: var(--button-hover) !important; /* Same as hover */
+      border-color:var(--button-hover) !important;
+      color: var(--button-text-hover-color) !important;
+      /* Remove focus/active shadow */
+      /* Remove focus outline */
+  }
+  
+  .bold-links {
+    font-weight: 450;
+  }   
+  
+  
+  .dark-switch {
+  
+    margin-right: 20px;
+  }
+  
+  .checkbox {
+    opacity: 0;
+    position: absolute;
+  }
+  
+  
+  .checkbox-label {
+    background-color: #ffffff;
+    width: 50px;
+    height: 26px;
+    border-radius: 50px;
+    position: relative;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .fa-moon { color: #343a40; }
+  
+  .fa-sun { color: #e9ecef; }
+  
+  .checkbox-label .ball {
+    background-color: #19A7CE;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+  }
+  
+  .checkbox:checked + .checkbox-label .ball {
+    transform: translateX(24px);
+  }
+  
+  .form-control{
+              
+    background-color : var(--form-background-color);
+    color: var(--input-focus-text-color);
+  
+  }
+  
+  .custom-placeholder::placeholder{
+  
+    color: var( --text-color)
+  
+  }
+  
+  
+  
+  .form-control:focus {
+    background-color: var(--input-focus-background-color);
+    color: var(--input-focus-text-color);
+  
+  } 
+  
