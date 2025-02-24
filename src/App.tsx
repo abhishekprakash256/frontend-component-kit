@@ -11,6 +11,8 @@ import Para from './components/Para';
 import SocialMediaLinks from './components/SocialMediaLinks';
 import ArticleImage from './components/ArticleImage';
 import SpaceBlock from './components/SpaceBlock';
+import React from "react";
+
 
 const title : string = "Tech";
 const more_link : string = "www.google.com";

@@ -1,9 +1,14 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+  "compilerOptions": {
+    "outDir": "dist",
+    "declaration": true,
+    "emitDeclarationOnly": false,
+    "module": "ESNext",
+    "jsx": "react-jsx",
+    "types": ["react", "react-dom"],
+    "moduleResolution": "Node",
+    "target": "es2017",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true
+  }
 }
-
-
