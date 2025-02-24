@@ -37,6 +37,24 @@ const CardBundle: React.FC = () => {
       img_src: "image_1.png",
       card_url: "https://example.com/card4",
     },
+    {
+      card_title: "Card Title 2",
+      card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+      img_src: "federated-learning-flow.png", /* the image file is in the public folder */
+      card_url: "https://example.com/card2",
+    },
+    {
+      card_title: "Card Title 3",
+      card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+      img_src: "image_1.png",  /* the image file is in the public folder */
+      card_url: "https://example.com/card3",
+    },
+    {
+      card_title: "Card Title 4",
+      card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+      img_src: "image_1.png",
+      card_url: "https://example.com/card4",
+    },
   ];
 
   return (
