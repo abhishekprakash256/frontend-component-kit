@@ -1,3 +1,5 @@
+// In the component where useState is used
+'use client';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
