@@ -44,6 +44,10 @@ npm run dev
 
 ```
 
+### Note
+
+After the tsc -b command copy the styles dir in dist
+
 ### Install 
 
 ```bash
