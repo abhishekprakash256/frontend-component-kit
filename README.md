@@ -54,6 +54,15 @@ After the tsc -b command copy the styles dir in dist
 npm install git@github.com:abhishekprakash256/front-end-component-kit.git#branch  (if branch needed)
 ```
 
+### Notes 
+
+✅ Vite = Client-Side Rendering (No SSR) → Works normally
+✅ Next.js = Server-Side Rendering (SSR) + Hydration → Needs careful handling
+✅ Fix hydration issues using useEffect()
+✅ Fix Bootstrap styling issues with d-flex justify-content-center flex-wrap
+✅ Move CSS imports to _app.tsx in Next.js
+Now your component should behave the same way in both Vite and Next.js! 
+
 
 
 ### install as 
