@@ -29,7 +29,7 @@ const SocialMediaLinks: React.FC<MediaLinksProps> = ({
   <Col className="col-12 d-flex justify-content-center flex-wrap">
     {github_link && (
       <a href={github_link} target="_blank" rel="noopener noreferrer">
-        <img src="github.svg" className="leetcode-icon hover-effect-github mx-3" width="33" height="33" alt="GitHub" />
+        <img src="github.svg" className="leetcode-icon hover-effect-github mx-2" width="33" height="33" alt="GitHub" />
       </a>
     )}
     {linkedin_link && (
