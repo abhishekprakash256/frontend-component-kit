@@ -9,6 +9,7 @@
     "moduleResolution": "Node",
     "target": "es2017",
     "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "skipLibCheck": true
   }
 }
