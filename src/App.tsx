@@ -3,7 +3,6 @@ import NavBar from './components/NavBar';
 import './App.css';  // check later
 import CustomBody from './components/CustomBody';
 import HeadingBar from './components/HeadingBar';
-import CardBundle from './components/CardBundle';
 import More from './components/More';
 import MarkDown from './components/MarkDown';
 import Footer from './components/Footer';
@@ -12,6 +11,7 @@ import SocialMediaLinks from './components/SocialMediaLinks';
 import ArticleImage from './components/ArticleImage';
 import SpaceBlock from './components/SpaceBlock';
 import React from "react";
+import CardLists from './components/CardLists';
 
 
 const title : string = "Tech";
@@ -77,6 +77,20 @@ const cardData = [
 ];
 
 
+const cardDataTwo =   [{
+  card_title: "Card Title 1",
+  card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems. ",
+  img_src: "cards.jpg",  /* the image file is in the public folder */
+  card_url: "https://example.com/card1", 
+},
+{
+  card_title: "Card Title 2",
+  card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+  img_src: "federated-learning-flow.png", /* the image file is in the public folder */
+  card_url: "https://example.com/card2",
+}]
+
+
 
 function App() {
 
@@ -88,11 +102,13 @@ function App() {
       <CustomBody>
 
       <HeadingBar title={title}/> 
-      <CardBundle></CardBundle>
+
+      <CardLists cardData = {cardDataTwo}></CardLists>
+    
 
       <More more_link={ more_link}/>
      <HeadingBar title={title}/>
-     <CardBundle></CardBundle>
+  
      <HeadingBar title={"Chat App"}/> 
      <ArticleImage image_link= {article_image} />
      <HeadingBar title={"MarkDown Block"}/> 
@@ -101,6 +117,11 @@ function App() {
  
 
       <Para description={ description }/>
+
+
+
+    <CardLists cardData = {cardData}></CardLists>
+
 
       <SocialMediaLinks
   github_link = {socialLinks[0]}
