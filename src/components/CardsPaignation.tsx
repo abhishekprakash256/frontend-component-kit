@@ -17,7 +17,7 @@ import '../styles/PaignatationExp.css'; // the custom import file
 const CardExp: React.FC<CardExpProps> = ({ card_para, img_src, card_url, card_title }) => {
   return (
     <Card className="">
-      <Card.Img className="card-img-container p-3 " variant="top" src={img_src} />
+      <Card.Img className="card-img-container p-3" variant="top" src={img_src} />
       <Card.Body>
         <div className="font-color-class text-center card-title">
           <Card.Title>{card_title}</Card.Title>
