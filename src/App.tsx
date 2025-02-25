@@ -12,7 +12,7 @@ import ArticleImage from './components/ArticleImage';
 import SpaceBlock from './components/SpaceBlock';
 import React from "react";
 import CardLists from './components/CardLists';
-
+import PaginationExp from './components/PaignatationExp'
 
 const title : string = "Tech";
 const more_link : string = "www.google.com";
@@ -133,7 +133,11 @@ function App() {
   medium_link=""
 />
 
+<PaginationExp></PaginationExp>
+
   <SpaceBlock></SpaceBlock>  { /*SpaceBlock component to create a space between the social media links and the footer */ }
+
+
 
       </CustomBody>
 
