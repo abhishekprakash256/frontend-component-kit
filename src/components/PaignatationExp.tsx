@@ -24,9 +24,6 @@ for (let number = 1; number <= 5; number++) {
 
 const PaginationExp: React.FC = () => {
 return (
-
-
-
 <Container>
     <Row className="rounded background-color-body mt-3 p-3 justify-content-center">
         <Col className="text-center">
@@ -43,7 +40,6 @@ return (
     </Row>
 </Container>
             
-
     );
   };
 

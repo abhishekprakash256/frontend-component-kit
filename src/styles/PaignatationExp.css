@@ -9,6 +9,7 @@
     background-color: var(--background-color);
     color: var(--text-color) !important;/* Text color */
     border: 0px solid var(--text-color) ; /* Border color  can be changed*/
+    border-radius: 15%;
 }
 
 .pagination .page-item.active .page-link {
