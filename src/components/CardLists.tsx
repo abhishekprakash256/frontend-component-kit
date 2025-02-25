@@ -1,3 +1,7 @@
+/*
+The componet to display max cards and leave space for cards as well , the paignation login is not there
+*/
+
 "use client";
 import React from "react";
 import { Card, Button, Row, Col } from "react-bootstrap";

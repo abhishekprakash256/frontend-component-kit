@@ -13,6 +13,10 @@ import SpaceBlock from './components/SpaceBlock';
 import React from "react";
 import CardLists from './components/CardLists';
 import PaginationExp from './components/PaignatationExp'
+import CardsPaignation from './components/CardsPaignation';
+
+
+
 
 const title : string = "Tech";
 const more_link : string = "www.google.com";
@@ -92,6 +96,83 @@ const cardDataTwo =   [{
 
 
 
+const Paignation_data = [
+  {
+    card_title: "Card Title 1",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems. ",
+    img_src: "cards.jpg",  /* the image file is in the public folder */
+    card_url: "https://example.com/card1", 
+  },
+  {
+    card_title: "Card Title 2",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+    img_src: "federated-learning-flow.png", /* the image file is in the public folder */
+    card_url: "https://example.com/card2",
+  },
+  {
+    card_title: "Card Title 3",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+    img_src: "image_1.png",  /* the image file is in the public folder */
+    card_url: "https://example.com/card3",
+  },
+  {
+    card_title: "Card Title 4",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+    img_src: "image_1.png",
+    card_url: "https://example.com/card4",
+  },
+  {
+    card_title: "Card Title 2",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+    img_src: "federated-learning-flow.png", /* the image file is in the public folder */
+    card_url: "https://example.com/card2",
+  },
+  {
+    card_title: "Card Title 3",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+    img_src: "image_1.png",  /* the image file is in the public folder */
+    card_url: "https://example.com/card3",
+  },
+  {
+    card_title: "Card Title 4",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+    img_src: "image_1.png",
+    card_url: "https://example.com/card4",
+  },
+
+  {
+    card_title: "Card Title 4",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+    img_src: "image_1.png",
+    card_url: "https://example.com/card4",
+  },
+  {
+    card_title: "Card Title 2",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+    img_src: "federated-learning-flow.png", /* the image file is in the public folder */
+    card_url: "https://example.com/card2",
+  },
+  {
+    card_title: "Card Title 3",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+    img_src: "image_1.png",  /* the image file is in the public folder */
+    card_url: "https://example.com/card3",
+  },
+  {
+    card_title: "Card Title 4",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+    img_src: "image_1.png",
+    card_url: "https://example.com/card4",
+  },
+];
+
+
+
+
+
+
+
+
 function App() {
 
   return (
@@ -108,7 +189,9 @@ function App() {
 
       <More more_link={ more_link}/>
      <HeadingBar title={title}/>
-  
+
+    <CardsPaignation cardData={Paignation_data} />
+
      <HeadingBar title={"Chat App"}/> 
      <ArticleImage image_link= {article_image} />
      <HeadingBar title={"MarkDown Block"}/> 
@@ -121,6 +204,8 @@ function App() {
 
 
     <CardLists cardData = {cardData}></CardLists>
+
+
 
 
       <SocialMediaLinks

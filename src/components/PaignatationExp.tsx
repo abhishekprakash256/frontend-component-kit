@@ -1,5 +1,5 @@
 /*
-The component to make the paignanton
+The component to make the paignanton only the paignation bar
 */
 
 import React from 'react';
