@@ -3746,14 +3746,14 @@ const tx = ({ image_link: e }) => /* @__PURE__ */ g.jsx(Ge, { children: /* @__PU
     /* @__PURE__ */ g.jsx(Ze.Text, { className: "card-text font-color-class justify-content", children: e }),
     /* @__PURE__ */ g.jsx("div", { className: "text-center", children: /* @__PURE__ */ g.jsx(dn, { className: "button-custom-color", href: n, children: "Explore" }) })
   ] })
-] }), hf = ({ card_para: e, img_src: t, card_url: n, card_title: r }) => /* @__PURE__ */ g.jsxs(Ze, { className: "", children: [
+] }), hf = ({ card_para: e, img_src: t, card_url: n, card_title: r }) => (console.log("✅ CardExp is rendering:", { card_title: r, card_para: e, img_src: t, card_url: n }), /* @__PURE__ */ g.jsxs(Ze, { className: "", children: [
   /* @__PURE__ */ g.jsx(Ze.Img, { className: "card-img-container p-3", variant: "top", src: t }),
   /* @__PURE__ */ g.jsxs(Ze.Body, { children: [
     /* @__PURE__ */ g.jsx("div", { className: "font-color-class text-center card-title", children: /* @__PURE__ */ g.jsx(Ze.Title, { children: r }) }),
     /* @__PURE__ */ g.jsx(Ze.Text, { className: "card-text font-color-class justify-content", children: e }),
     /* @__PURE__ */ g.jsx("div", { className: "text-center", children: /* @__PURE__ */ g.jsx(dn, { className: "button-custom-color", href: n, children: "Explore" }) })
   ] })
-] }), rx = ({ cardData: e }) => /* @__PURE__ */ g.jsx(Ie, { children: e.map((t, n) => /* @__PURE__ */ g.jsx(we, { xs: 12, sm: 12, md: 4, className: "mt-3", children: /* @__PURE__ */ g.jsx(
+] })), rx = ({ cardData: e }) => (console.log("✅ CardLists is rendering with data:", e), /* @__PURE__ */ g.jsx(Ie, { children: e.map((t, n) => /* @__PURE__ */ g.jsx(we, { xs: 12, sm: 12, md: 4, className: "mt-3", children: /* @__PURE__ */ g.jsx(
   hf,
   {
     card_title: t.card_title,
@@ -3761,7 +3761,7 @@ const tx = ({ image_link: e }) => /* @__PURE__ */ g.jsx(Ge, { children: /* @__PU
     img_src: t.img_src,
     card_url: t.card_url
   }
-) }, n)) }), ix = ({ children: e }) => /* @__PURE__ */ g.jsx("div", { className: "custom-body", children: /* @__PURE__ */ g.jsx(Ge, { children: /* @__PURE__ */ g.jsx(Ie, { children: /* @__PURE__ */ g.jsx(we, { children: e }) }) }) }), ax = () => {
+) }, n)) })), ix = ({ children: e }) => /* @__PURE__ */ g.jsx("div", { className: "custom-body", children: /* @__PURE__ */ g.jsx(Ge, { children: /* @__PURE__ */ g.jsx(Ie, { children: /* @__PURE__ */ g.jsx(we, { children: e }) }) }) }), ax = () => {
   const [e, t] = ut(!1), n = (/* @__PURE__ */ new Date()).getFullYear(), r = (i) => {
     i.preventDefault(), i.currentTarget.checkValidity() || i.stopPropagation(), t(!0);
   };

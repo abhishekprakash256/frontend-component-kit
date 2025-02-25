@@ -5,6 +5,7 @@ import '../styles/Card.css';
 
 // Define CardExp First
 const CardExp: React.FC<CardExpProps> = ({ card_para, img_src, card_url, card_title }) => {
+  console.log("✅ CardExp is rendering:", { card_title, card_para, img_src, card_url });
   return (
     <Card className="">
       <Card.Img className="card-img-container p-3" variant="top" src={img_src} />
@@ -39,6 +40,7 @@ interface CardExpListProps {
 
 // ✅ Then Define CardLists
 const CardLists: React.FC<CardExpListProps> = ({ cardData }) => {
+  console.log("✅ CardLists is rendering with data:", cardData);
   return (
     <Row>
       {cardData.map((card, index) => (
