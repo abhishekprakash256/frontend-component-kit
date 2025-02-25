@@ -50,7 +50,7 @@ interface CardExpListProps {
 // ✅ Main Component with Pagination
 const CardsPaignation: React.FC<CardExpListProps> = ({ cardData }) => {
   const [currentPage, setCurrentPage] = useState(1);
-  const cardsPerPage = 9;
+  const cardsPerPage = 9; // set the number of cards per page 
   const totalPages = Math.ceil(cardData.length / cardsPerPage);
 
   // Slice data for current page
@@ -80,8 +80,9 @@ const CardsPaignation: React.FC<CardExpListProps> = ({ cardData }) => {
 
       {/* Pagination */}
       {totalPages > 1 && (
-        <Row className="mt-4 justify-content-center">
-          <Pagination>
+            <Row className="rounded background-color-body mt-3 p-3 justify-content-center">
+                <Col className="text-center">
+          <Pagination size="sm" className="justify-content-center">
             <Pagination.First onClick={() => handlePageChange(1)} disabled={currentPage === 1} />
             <Pagination.Prev onClick={() => handlePageChange(currentPage - 1)} disabled={currentPage === 1} />
             
@@ -98,6 +99,7 @@ const CardsPaignation: React.FC<CardExpListProps> = ({ cardData }) => {
             <Pagination.Next onClick={() => handlePageChange(currentPage + 1)} disabled={currentPage === totalPages} />
             <Pagination.Last onClick={() => handlePageChange(totalPages)} disabled={currentPage === totalPages} />
           </Pagination>
+          </Col>
         </Row>
       )}
     </Container>
