@@ -30,6 +30,44 @@ export default tseslint.config({
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
 
 ```js
+```
+
+
+### Commands 
+
+```bash
+npm run build
+
+tsc -b  #to build the dist files
+
+npm run dev
+
+```
+
+### Note
+
+After the tsc -b command copy the styles dir in dist
+
+### Install 
+
+```bash
+npm install git@github.com:abhishekprakash256/front-end-component-kit.git#branch  (if branch needed)
+```
+
+### Notes 
+
+✅ Vite = Client-Side Rendering (No SSR) → Works normally
+✅ Next.js = Server-Side Rendering (SSR) + Hydration → Needs careful handling
+✅ Fix hydration issues using useEffect()
+✅ Fix Bootstrap styling issues with d-flex justify-content-center flex-wrap
+✅ Move CSS imports to _app.tsx in Next.js
+Now your component should behave the same way in both Vite and Next.js! 
+
+
+
+### install as 
+
+
 // eslint.config.js
 import react from 'eslint-plugin-react'
 

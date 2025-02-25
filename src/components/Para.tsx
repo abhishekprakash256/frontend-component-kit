@@ -1,3 +1,4 @@
+import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import "../styles/style.css"; // Custom CSS
 import "../styles/Para.css"; // Custom CSS

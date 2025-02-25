@@ -1,0 +1,10 @@
+.container {
+    background-color: #19A7CE;
+
+}
+
+.custom-body {
+    background-color: var(--background-color);
+    padding: 0%; /* fix heiight issue */
+    margin: 0%;
+}

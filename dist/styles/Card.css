@@ -1,0 +1,41 @@
+.font-color-class {
+    color: var(--blue-text-color); /* Replace #0000ff with the color of your choice */
+  }
+
+  .card-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Number of lines to show */
+    -webkit-box-orient: vertical;
+    
+}
+
+.card-img-container {
+    width: auto;
+    height: 200px; /* Set the height you want */
+    object-fit: contain; /* Ensures the image fits within the container */
+    object-position: center; /* Centers the image horizontally */
+ 
+
+  }
+  
+
+  .card 
+  {
+      background-color: var(--background-color)  !important ;
+      max-width: 40rem; /* can be removed on need */   
+  }
+
+.card-title {
+
+
+
+    color: var(--text-color) ;
+}
+
+.justify-content {
+  text-align: justify; /* Aligns text properly */
+}
+ 
+   

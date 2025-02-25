@@ -1,0 +1,19 @@
+
+
+.background-color-body {
+    background-color: var(--background-color); /* Replace #ff0000 with the color of your choice */
+  }
+
+  .bio-font {
+    font-family: 'Helvetica';
+    font-weight: 100;
+  }
+
+  .font-color-class {
+    color: var(--blue-text-color); /* Replace #0000ff with the color of your choice */
+  }
+
+  .heading-responsive-font {
+    font-size: clamp(2rem, 4vw, 3rem);
+  }
+  

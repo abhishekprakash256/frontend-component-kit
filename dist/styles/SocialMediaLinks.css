@@ -1,0 +1,43 @@
+
+
+
+.hover-effect-leetcode:hover {
+    border: 2px solid var(--social-media-color-border-hover);
+    background-color: var(--light-gray);
+  }
+  
+  .hover-effect-kaggle:hover {
+    border: 2px solid var(--social-media-color-border-hover);
+    background-color: var(--light-gray);
+  }
+  
+  .hover-effect-github:hover {
+    border: 2px solid var(--social-media-color-border-hover);
+    background-color: var(--light-gray);
+  }
+  
+  .hover-effect-linkedin:hover {
+    border: 2px solid var(--social-media-color-border-hover);
+    background-color: var(--light-gray);
+  }
+  
+  .hover-effect-gitlab:hover {
+   /* content: url(gitlab-color.svg);  Change the image source on hover */
+   border: 2px solid var(--social-media-color-border-hover);
+   background-color: var(--light-gray);
+  }
+  
+  .social-media{
+    height: 40px;
+  }
+
+
+.leetcode-icon
+{
+ padding: 1px;
+  border: 2px solid var(--text-color);
+ border-radius: 15%;
+  margin-top: 0;
+  background-color:  var(--social-media-color);
+}
+

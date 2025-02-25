@@ -1,0 +1,20 @@
+.background-color-body {
+    background-color: var(--background-color); /* Replace #ff0000 with the color of your choice */
+  }
+
+.bio-desc
+{
+  font-family:Arial;
+  font-weight: 600;
+
+
+}
+
+.font-color-class {
+    color: var(--blue-text-color); /* Replace #0000ff with the color of your choice */ 
+  }
+
+.justify-content {
+  text-align: justify;
+}
+ 
