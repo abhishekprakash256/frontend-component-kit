@@ -30,3 +30,7 @@
     overflow: auto;
   }
   
+  .markdown-body ul {
+    list-style-type: disc;
+   
+  }
