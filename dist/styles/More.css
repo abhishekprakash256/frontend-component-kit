@@ -17,7 +17,8 @@
   {
     color: var(--background-color);
   }
-    
+  
+
 
   /* Apply animation on hover with delays */
   .more-color:hover .dot:nth-child(1) {

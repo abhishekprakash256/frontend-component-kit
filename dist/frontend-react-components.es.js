@@ -10608,7 +10608,7 @@ function Hm(e) {
     Mm.test(e.slice(0, t)) ? e : ""
   );
 }
-const yx = ({ mark_down_data: e }) => /* @__PURE__ */ g.jsx(Ve, { children: /* @__PURE__ */ g.jsx(Oe, { className: "rounded background-color-body mt-3 p-2", children: /* @__PURE__ */ g.jsx(ge, { children: /* @__PURE__ */ g.jsx("div", { className: "mb-0 font-color-class bio-desc markdown-body", children: /* @__PURE__ */ g.jsx(zm, { children: e }) }) }) }) }), xx = ({ more_link: e }) => {
+const yx = ({ mark_down_data: e }) => /* @__PURE__ */ g.jsx(Ve, { children: /* @__PURE__ */ g.jsx(Oe, { className: "rounded background-color-body mt-3 p-2", children: /* @__PURE__ */ g.jsx(ge, { children: /* @__PURE__ */ g.jsx("div", { className: "mb-0 mt-1 font-color-class bio-desc markdown-body", children: /* @__PURE__ */ g.jsx(zm, { children: e }) }) }) }) }), xx = ({ more_link: e }) => {
   const t = e.startsWith("http://") || e.startsWith("https://") ? e : `https://${e}`;
   return /* @__PURE__ */ g.jsx(Ve, { children: /* @__PURE__ */ g.jsx(Oe, { className: "", children: /* @__PURE__ */ g.jsx(ge, { className: "text-center", children: /* @__PURE__ */ g.jsx("h1", { className: "animate bounce", children: /* @__PURE__ */ g.jsxs(
     "a",
