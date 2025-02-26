@@ -10,3 +10,4 @@ export { default as NavBar } from './components/NavBar';
 export { default as Para } from './components/Para';
 export { default as SocialMediaLinks } from './components/SocialMediaLinks';
 export { default as SpaceBlock } from './components/SpaceBlock';
+export { default as CardsPaignation } from './components/CardsPaignation';
