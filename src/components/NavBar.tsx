@@ -56,7 +56,7 @@ const NavBar: React.FC = () => {
           </label>
         </div>
 
-        <Navbar.Brand className="navbar-brand bold" href="#">
+        <Navbar.Brand className="navbar-brand bold" href="/">
           Abhi
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -65,13 +65,13 @@ const NavBar: React.FC = () => {
             <Nav.Link className="nav-link bold-links" href="/about">
               About
             </Nav.Link>
-            <Nav.Link className="nav-link bold-links" href="/tech">
+            <Nav.Link className="nav-link bold-links" href="/section/tech">
               Tech
             </Nav.Link>
-            <Nav.Link className="nav-link bold-links" href="/project">
+            <Nav.Link className="nav-link bold-links" href="/section/project">
               Project
             </Nav.Link>
-            <Nav.Link className="nav-link bold-links" href="/life">
+            <Nav.Link className="nav-link bold-links" href="/section/life">
               Life
             </Nav.Link>
             <Nav.Link className="nav-link bold-links" href="/contact">

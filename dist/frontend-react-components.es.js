@@ -15503,14 +15503,14 @@ const iv = {
         /* @__PURE__ */ g.jsx("span", { className: "ball" })
       ] })
     ] }),
-    /* @__PURE__ */ g.jsx(Rn.Brand, { className: "navbar-brand bold", href: "#", children: "Abhi" }),
+    /* @__PURE__ */ g.jsx(Rn.Brand, { className: "navbar-brand bold", href: "/", children: "Abhi" }),
     /* @__PURE__ */ g.jsx(Rn.Toggle, { "aria-controls": "navbarScroll" }),
     /* @__PURE__ */ g.jsxs(Rn.Collapse, { id: "navbarScroll", children: [
       /* @__PURE__ */ g.jsxs(Ft, { className: "me-auto my-2 my-lg-0", style: { maxHeight: "150px" }, navbarScroll: !0, children: [
         /* @__PURE__ */ g.jsx(Ft.Link, { className: "nav-link bold-links", href: "/about", children: "About" }),
-        /* @__PURE__ */ g.jsx(Ft.Link, { className: "nav-link bold-links", href: "/tech", children: "Tech" }),
-        /* @__PURE__ */ g.jsx(Ft.Link, { className: "nav-link bold-links", href: "/project", children: "Project" }),
-        /* @__PURE__ */ g.jsx(Ft.Link, { className: "nav-link bold-links", href: "/life", children: "Life" }),
+        /* @__PURE__ */ g.jsx(Ft.Link, { className: "nav-link bold-links", href: "/section/tech", children: "Tech" }),
+        /* @__PURE__ */ g.jsx(Ft.Link, { className: "nav-link bold-links", href: "/section/project", children: "Project" }),
+        /* @__PURE__ */ g.jsx(Ft.Link, { className: "nav-link bold-links", href: "/section/life", children: "Life" }),
         /* @__PURE__ */ g.jsx(Ft.Link, { className: "nav-link bold-links", href: "/contact", children: "Contact" })
       ] }),
       /* @__PURE__ */ g.jsxs(Ke, { className: "d-flex", children: [
