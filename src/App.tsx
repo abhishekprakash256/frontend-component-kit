@@ -206,8 +206,6 @@ const Paignation_data = [
 
 
 
-
-
 function App() {
 
   return (

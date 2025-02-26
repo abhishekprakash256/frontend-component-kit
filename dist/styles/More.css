@@ -15,12 +15,7 @@
   
   .more-color 
   {
-    color: var(--form-input-color);
-  }
-  
-  .more-color:hover
-  {
-    color: var(--form-input-color);
+    color: var(--background-color);
   }
     
 
