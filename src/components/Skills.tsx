@@ -1,22 +1,25 @@
+/*
+
+Not used right now
+*/
+
 import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import { Container, Row, Col } from "react-bootstrap";
+import "../styles/style.css"; // Custom CSS
+import "../styles/Skills.css"; // Custom CSS
 import ReactMarkdown from 'react-markdown';
-import '../styles/style.css'; // Custom styles
-import '../styles/MarkDown.css'; // Custom styles
 
 interface MarkDownProps {
   mark_down_data: string;
 }
 
-const MarkDown: React.FC<MarkDownProps> = ({ mark_down_data }) => {
+const Skills: React.FC<MarkDownProps> = ({ mark_down_data }) => {
   return (
     <Container>
       <Row className="rounded background-color-body mt-3 p-2">
         <Col>
           {/* Wrap ReactMarkdown in a div and apply className to the div */}
-          <div className="mb-0 mt-1 font-color-class bio-desc markdown-body">
+          <div className="mb-0 font-color-class bio-desc markdown-body">
             <ReactMarkdown>{mark_down_data}</ReactMarkdown>
           </div>
         </Col>
@@ -25,4 +28,4 @@ const MarkDown: React.FC<MarkDownProps> = ({ mark_down_data }) => {
   );
 };
 
-export default MarkDown;
+export default Skills;
