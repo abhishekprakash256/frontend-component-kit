@@ -15,6 +15,7 @@ import CardLists from './components/CardLists';
 import PaginationExp from './components/PaignatationExp'
 import CardsPaignation from './components/CardsPaignation';
 import AboutPic from './components/AboutPic';
+import ButtonBar from './components/ButtonBar';
 
 // import the data 
 
@@ -30,7 +31,7 @@ const experience_data1 : string = "#### **Software Developer | Pro Playgrounds**
 const experience_data2: string = "#### **Full Stack Developer | Self Employed**  \n - **Portfolio Migration:** Upgrading to React, Next.js, and NestJS (TS) for scalability & modular architecture. Integrating PostgreSQL & MongoDB for structured & unstructured data.  \n - **Refactored monolithic architecture into a hybrid microservices model, improving scalability and maintainability.**  \n - **Chat App:** Built a real-time messaging app with React, Flask, MongoDB, Redis, and WebSockets.  \n   - Implemented JWT authentication, reducing unauthorized access by 30%.  \n   - Designed a responsive and intuitive UI with Bootstrap, ensuring optimal performance and a seamless experience.  \n - **Tiny URL Generator:** Developed a URL-shortening service with React, Flask & Redis, reducing query time by 25%.  \n   - Incorporated collision avoidance and exposed a REST API for URL creation and redirection.  \n - **Portfolio Website:** Developed both front-end and back-end and deployed a personal portfolio site on AWS EC2, automated with CI/CD pipelines, NGINX, and Ansible, achieving 99.9% uptime."
 const experience_data3 : string = "#### **Software Developer and DevOps | Cognitive Geo Interpretation Inc**  \n - **Designed & implemented a GitLab CI/CD pipeline, automating AWS EC2 provisioning for a microservices architecture.**  \n - **Integrated Ansible for automated configuration management, ensuring consistency and reducing developer setup time by 55%.**  \n - **Increased test coverage from 63% to 78% by using Pytest & unit testing.** "
 const experience_data4 : string = "#### **Research Assistant | Florida State University**  \n - **Developed Federated Learning (Fed-Avg) models on MNIST dataset, achieving 94% accuracy using PyTorch.**  \n - **Built a Double Deep Q-Learning model for edge computing, optimizing task off-loading by 30%, using PyTorch.**  \n - **Developed a backend with Python Flask for efficient CRUD operations on an SQLite database, populating it with 2,000 entries and optimizing query performance by 20%.**"
-
+const resume_link : string = "/resume.pdf";
 
 const socialLinks = [
   "https://github.com/yourprofile",
@@ -290,7 +291,7 @@ function App() {
   <SpaceBlock></SpaceBlock>  { /*SpaceBlock component to create a space between the social media links and the footer */ }
 
 
-
+    <ButtonBar button_text="Download Resume" link={resume_link} />
       </CustomBody>
 
       <Footer></Footer>
