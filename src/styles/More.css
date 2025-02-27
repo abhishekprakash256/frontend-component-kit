@@ -15,14 +15,10 @@
   
   .more-color 
   {
-    color: var(--form-input-color);
+    color: var(--background-color);
   }
   
-  .more-color:hover
-  {
-    color: var(--form-input-color);
-  }
-    
+
 
   /* Apply animation on hover with delays */
   .more-color:hover .dot:nth-child(1) {

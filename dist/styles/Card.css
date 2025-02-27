@@ -2,6 +2,9 @@
     color: var(--blue-text-color); /* Replace #0000ff with the color of your choice */
   }
 
+
+
+  
   .card-text {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -21,11 +24,11 @@
   }
   
 
-  .card 
-  {
-      background-color: var(--background-color)  !important ;
-      max-width: 40rem; /* can be removed on need */   
-  }
+.card 
+{
+    background-color: var(--background-color)  !important ;
+    max-width: 40rem; /* can be removed on need */
+}
 
 .card-title {
 

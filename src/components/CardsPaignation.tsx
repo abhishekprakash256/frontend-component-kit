@@ -14,7 +14,9 @@ import '../styles/PaignatationExp.css'; // the custom import file
 
 
 // Card Component
+
 const CardExp: React.FC<CardExpProps> = ({ card_para, img_src, card_url, card_title }) => {
+  //console.log("✅ CardExp is rendering:", { card_title, card_para, img_src, card_url });
   return (
     <Card className="">
       <Card.Img className="card-img-container p-3 " variant="top" src={img_src} />
@@ -34,6 +36,7 @@ const CardExp: React.FC<CardExpProps> = ({ card_para, img_src, card_url, card_ti
     </Card>
   );
 };
+
 
 // Interfaces
 interface CardExpProps {
@@ -64,8 +67,8 @@ const CardsPaignation: React.FC<CardExpListProps> = ({ cardData }) => {
   };
 
   return (
-    <Container>
-      <Row>
+    <Container className="p-0">
+      <Row className="">
         {currentCards.map((card, index) => (
           <Col key={index} xs={12} sm={12} md={4} className="mt-3">
             <CardExp 
@@ -80,7 +83,7 @@ const CardsPaignation: React.FC<CardExpListProps> = ({ cardData }) => {
 
       {/* Pagination */}
       {totalPages > 1 && (
-            <Row className="rounded background-color-body mt-3 p-3 justify-content-center">
+            <Row className="rounded background-color-body mt-3 p-3 justify-content-center m-0">
                 <Col className="text-center">
           <Pagination size="sm" className="justify-content-center">
             <Pagination.First onClick={() => handlePageChange(1)} disabled={currentPage === 1} />
