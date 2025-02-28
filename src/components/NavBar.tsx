@@ -1,5 +1,8 @@
 // NavBar.tsx
 'use client';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../styles/style.css'; // the custom import file
+import '../styles/NavBar.css'; // the custom import file
 import React, { useState, useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
