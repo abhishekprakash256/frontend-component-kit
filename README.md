@@ -48,7 +48,7 @@ npm run dev
 
 After the tsc -b command copy the styles dir and the asset in dist as well 
 
-### Install 
+### Install   
 
 ```bash
 npm install git@github.com:abhishekprakash256/front-end-component-kit.git#branch  (if branch needed)
