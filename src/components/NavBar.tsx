@@ -1,25 +1,36 @@
-// In the component where useState is used
+// NavBar.tsx
 'use client';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { useState, useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import '../styles/style.css'; // the custom import file
-import '../styles/NavBar.css'; // the custom import file
-import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 
-const NavBar: React.FC = () => {     
-  const [theme, setTheme] = useState('light'); // Default theme
-  const [isThemeInitialized, setIsThemeInitialized] = useState(false); // Track if the theme is ready
+// Custom hook for routing (to be used both in Vite/React and Next.js)
+const useRouterHook = (router?: any) => {
+  // In Next.js, use the passed router prop, otherwise use react-router in Vite
+  return router || window?.history;
+};
+
+interface NavBarProps {
+  router?: any; // Optional router prop for Next.js
+}
+
+const NavBar: React.FC<NavBarProps> = ({ router }) => {
+  const [theme, setTheme] = useState('light');
+  const [isThemeInitialized, setIsThemeInitialized] = useState(false);
+  const [searchTerm, setSearchTerm] = useState(""); // For search input
+
+  // Use custom router hook
+  const navigation = useRouterHook(router);
 
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme') || 'light';
     setTheme(savedTheme);
-    setIsThemeInitialized(true); // Mark theme as initialized
+    setIsThemeInitialized(true);
   }, []);
 
   useEffect(() => {
@@ -33,8 +44,20 @@ const NavBar: React.FC = () => {
     setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
   };
 
+  const handleSearch = (event: React.FormEvent) => {
+    event.preventDefault();
+    if (searchTerm.trim()) {
+      // If in Next.js, navigate using the router prop passed in
+      if (navigation && typeof navigation.push === 'function') {
+        navigation.push(`/search/${encodeURIComponent(searchTerm)}`);
+      } else {
+        // If in React/Vite, use window history (for Vite with react-router)
+        window.location.href = `/search/${encodeURIComponent(searchTerm)}`;
+      }
+    }
+  };
+
   if (!isThemeInitialized) {
-    // Avoid rendering the component until the theme is initialized
     return null;
   }
 
@@ -78,14 +101,20 @@ const NavBar: React.FC = () => {
               Contact
             </Nav.Link>
           </Nav>
-          <Form className="d-flex">
+          
+          {/* Search Form */}
+          <Form className="d-flex" onSubmit={handleSearch}>
             <Form.Control
-              type="search"   
+              type="search"
               placeholder="Search"
               className="me-2 custom-border form-control custom-placeholder"
               aria-label="Search"
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
             />
-            <Button className="button-custom-color">Search</Button>
+            <Button className="button-custom-color" type="submit">
+              Search
+            </Button>
           </Form>
         </Navbar.Collapse>
       </Container>
