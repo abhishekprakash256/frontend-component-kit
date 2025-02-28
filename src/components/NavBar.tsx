@@ -80,7 +80,7 @@ const NavBar: React.FC = () => {
           </Nav>
           <Form className="d-flex">
             <Form.Control
-              type="search"
+              type="search"   
               placeholder="Search"
               className="me-2 custom-border form-control custom-placeholder"
               aria-label="Search"
