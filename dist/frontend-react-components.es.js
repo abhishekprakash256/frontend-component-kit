@@ -15550,7 +15550,7 @@ const ib = {
   a && /* @__PURE__ */ g.jsx("a", { href: a, target: "_blank", rel: "noopener noreferrer", children: /* @__PURE__ */ g.jsx("img", { src: ub, className: "leetcode-icon hover-effect-kaggle mx-2", width: "33", height: "33", alt: "Kaggle" }) }),
   o && /* @__PURE__ */ g.jsx("a", { href: o, target: "_blank", rel: "noopener noreferrer", children: /* @__PURE__ */ g.jsx("img", { src: "#", className: "leetcode-icon hover-effect-medium mx-2", width: "33", height: "33", alt: "Medium" }) })
 ] }) }) }), Ab = () => /* @__PURE__ */ g.jsx($e, { children: /* @__PURE__ */ g.jsx(Te, { className: "mt-3" }) }), fb = ({ card_para: e, img_src: t, card_url: n, card_title: r }) => /* @__PURE__ */ g.jsxs(Me, { className: "", children: [
-  /* @__PURE__ */ g.jsx(Me.Img, { className: "card-img-container p-3 ", variant: "top", src: t }),
+  /* @__PURE__ */ g.jsx(Me.Img, { className: "card-img-container p-3", variant: "top", src: t }),
   /* @__PURE__ */ g.jsxs(Me.Body, { children: [
     /* @__PURE__ */ g.jsx("div", { className: "font-color-class text-center card-title", children: /* @__PURE__ */ g.jsx(Me.Title, { children: r }) }),
     /* @__PURE__ */ g.jsx(Me.Text, { className: "card-text font-color-class justify-content", children: e }),

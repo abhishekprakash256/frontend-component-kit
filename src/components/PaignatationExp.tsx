@@ -1,5 +1,5 @@
 /*
-The component to make the paignanton only the paignation bar
+The component to make the paignanton only the paignation bar it is not in the Cards Paignanation inbuild
 */
 
 import React from 'react';

@@ -16,10 +16,10 @@ import '../styles/PaignatationExp.css'; // the custom import file
 // Card Component
 
 const CardExp: React.FC<CardExpProps> = ({ card_para, img_src, card_url, card_title }) => {
-  //console.log("✅ CardExp is rendering:", { card_title, card_para, img_src, card_url });
+  //console.log("CardExp is rendering:", { card_title, card_para, img_src, card_url });
   return (
     <Card className="">
-      <Card.Img className="card-img-container p-3 " variant="top" src={img_src} />
+      <Card.Img className="card-img-container p-3" variant="top" src={img_src} />
       <Card.Body>
         <div className="font-color-class text-center card-title">
           <Card.Title>{card_title}</Card.Title>
@@ -50,7 +50,7 @@ interface CardExpListProps {
   cardData: CardExpProps[];
 }
 
-// ✅ Main Component with Pagination
+// Main Component with Pagination
 const CardsPaignation: React.FC<CardExpListProps> = ({ cardData }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const cardsPerPage = 9; // set the number of cards per page 

@@ -11,10 +11,10 @@ import '../styles/Card.css';
 import '../styles/PaignatationExp.css'; // the custom import file
 // Card Component
 const CardExp = ({ card_para, img_src, card_url, card_title }) => {
-    //console.log("✅ CardExp is rendering:", { card_title, card_para, img_src, card_url });
-    return (_jsxs(Card, { className: "", children: [_jsx(Card.Img, { className: "card-img-container p-3 ", variant: "top", src: img_src }), _jsxs(Card.Body, { children: [_jsx("div", { className: "font-color-class text-center card-title", children: _jsx(Card.Title, { children: card_title }) }), _jsx(Card.Text, { className: "card-text font-color-class justify-content", children: card_para }), _jsx("div", { className: "text-center", children: _jsx(Button, { className: "button-custom-color", href: card_url, children: "Explore" }) })] })] }));
+    //console.log("CardExp is rendering:", { card_title, card_para, img_src, card_url });
+    return (_jsxs(Card, { className: "", children: [_jsx(Card.Img, { className: "card-img-container p-3", variant: "top", src: img_src }), _jsxs(Card.Body, { children: [_jsx("div", { className: "font-color-class text-center card-title", children: _jsx(Card.Title, { children: card_title }) }), _jsx(Card.Text, { className: "card-text font-color-class justify-content", children: card_para }), _jsx("div", { className: "text-center", children: _jsx(Button, { className: "button-custom-color", href: card_url, children: "Explore" }) })] })] }));
 };
-// ✅ Main Component with Pagination
+// Main Component with Pagination
 const CardsPaignation = ({ cardData }) => {
     const [currentPage, setCurrentPage] = useState(1);
     const cardsPerPage = 9; // set the number of cards per page 

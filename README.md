@@ -46,7 +46,7 @@ npm run dev
 
 ### Note
 
-After the tsc -b command copy the styles dir in dist
+After the tsc -b command copy the styles dir and the asset in dist as well 
 
 ### Install 
 
