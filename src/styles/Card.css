@@ -19,10 +19,12 @@
     height: 200px; /* Set the height you want */
     object-fit: contain; /* Ensures the image fits within the container */
     object-position: center; /* Centers the image horizontally */
- 
+    border : 15px solid var(--background-color);
+    background-color: var(--primary-light-color);
+  
 
   }
-  
+
 
 .card 
 {
@@ -41,4 +43,6 @@
   text-align: justify; /* Aligns text properly */
 }
  
-   
+.card img {
+  
+}
