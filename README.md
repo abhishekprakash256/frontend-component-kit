@@ -36,7 +36,7 @@ export default tseslint.config({
 ### Commands 
 
 ```bash
-npm run build
+npm run build   
 
 tsc -b  #to build the dist files
 
