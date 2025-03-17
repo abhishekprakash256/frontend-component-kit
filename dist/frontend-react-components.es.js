@@ -3809,7 +3809,7 @@ const Mt = Object.assign(ys, {
   });
 });
 Se.displayName = "Row";
-const yb = ({ image_link: e }) => /* @__PURE__ */ m.jsx($e, { children: /* @__PURE__ */ m.jsx(Se, { className: "rounded background-color-body mt-3 p-2", children: /* @__PURE__ */ m.jsx(ye, { className: "text-center", children: /* @__PURE__ */ m.jsx("img", { src: e, className: "img-fluid rounded mt-2 mb-2", alt: "Article" }) }) }) }), xb = ({ card_para: e, img_src: t, card_url: n, card_title: r }) => /* @__PURE__ */ m.jsxs(Me, { className: "", children: [
+const yb = ({ image_link: e }) => /* @__PURE__ */ m.jsx($e, { children: /* @__PURE__ */ m.jsx(Se, { className: "rounded background-color-body mt-3 p-2", children: /* @__PURE__ */ m.jsx(ye, { className: "text-center", children: /* @__PURE__ */ m.jsx("img", { src: `/images/${e}`, className: "img-fluid rounded mt-2 mb-2", alt: "Article" }) }) }) }), xb = ({ card_para: e, img_src: t, card_url: n, card_title: r }) => /* @__PURE__ */ m.jsxs(Me, { className: "", children: [
   /* @__PURE__ */ m.jsx(Me.Img, { className: "card-img-container p-3", variant: "top", src: t }),
   /* @__PURE__ */ m.jsxs(Me.Body, { children: [
     /* @__PURE__ */ m.jsx("div", { className: "font-color-class text-center card-title", children: /* @__PURE__ */ m.jsx(Me.Title, { children: r }) }),
