@@ -17,7 +17,9 @@ import '../styles/PaignatationExp.css'; // the custom import file
 
 const CardExp: React.FC<CardExpProps> = ({ card_para, img_src, card_url, card_title }) => {
   //console.log("CardExp is rendering:", { card_title, card_para, img_src, card_url });
-  return (
+  
+
+  return (  
     <Card className="">
       <Card.Img className="card-img-container p-3" variant="top" src={`/images/${img_src}`} />
       <Card.Body>
@@ -28,9 +30,11 @@ const CardExp: React.FC<CardExpProps> = ({ card_para, img_src, card_url, card_ti
           {card_para}
         </Card.Text>
         <div className="text-center">
-          <Button className="button-custom-color" href={card_url}>
-            Explore
-          </Button>
+        <Button className="button-custom-color">
+        <a href={card_url} style={{ color: 'inherit', textDecoration: 'none' }}>
+          Explore
+        </a>
+      </Button>
         </div>
       </Card.Body>
     </Card>
@@ -65,6 +69,8 @@ const CardsPaignation: React.FC<CardExpListProps> = ({ cardData }) => {
       setCurrentPage(page);
     }
   };
+
+
 
   return (
     <Container className="p-0">
