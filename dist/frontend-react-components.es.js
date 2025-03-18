@@ -15560,7 +15560,7 @@ const ib = {
   /* @__PURE__ */ m.jsxs(Me.Body, { children: [
     /* @__PURE__ */ m.jsx("div", { className: "font-color-class text-center card-title", children: /* @__PURE__ */ m.jsx(Me.Title, { children: r }) }),
     /* @__PURE__ */ m.jsx(Me.Text, { className: "card-text font-color-class justify-content", children: e }),
-    /* @__PURE__ */ m.jsx("div", { className: "text-center", children: /* @__PURE__ */ m.jsx(Rt, { className: "button-custom-color", children: /* @__PURE__ */ m.jsx("a", { href: n, className: "link-style", target: "_self", rel: "noopener noreferrer", children: "Explore" }) }) })
+    /* @__PURE__ */ m.jsx("div", { className: "text-center", children: /* @__PURE__ */ m.jsx(Rt, { className: "button-custom-color", children: /* @__PURE__ */ m.jsx("a", { href: n, style: { color: "inherit", textDecoration: "none" }, children: "Explore" }) }) })
   ] })
 ] }), Nb = ({ cardData: e }) => {
   const [t, n] = Ze(1), r = 9, i = Math.ceil(e.length / r), a = e.slice((t - 1) * r, t * r), o = (l) => {
