@@ -30,9 +30,11 @@ const CardExp: React.FC<CardExpProps> = ({ card_para, img_src, card_url, card_ti
           {card_para}
         </Card.Text>
         <div className="text-center">
-          <Button className="button-custom-color" onClick={() => window.location.href = card_url} >
-            Explore
-          </Button>
+        <Button className="button-custom-color">
+        <a href={card_url} className="link-style" target="_self" rel="noopener noreferrer">
+          Explore
+        </a>
+      </Button>
         </div>
       </Card.Body>
     </Card>
