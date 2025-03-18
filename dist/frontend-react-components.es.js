@@ -12529,22 +12529,19 @@ function H1(e) {
   ), n = e || U1, r = t.data(), i = r.micromarkExtensions || (r.micromarkExtensions = []), a = r.fromMarkdownExtensions || (r.fromMarkdownExtensions = []), o = r.toMarkdownExtensions || (r.toMarkdownExtensions = []);
   i.push(B1(n)), a.push(s1()), o.push(u1(n));
 }
-const Eb = ({ mark_down_data: e }) => /* @__PURE__ */ m.jsx($e, { children: /* @__PURE__ */ m.jsx(Se, { className: "rounded background-color-body mt-3 p-2", children: /* @__PURE__ */ m.jsx(ye, { children: /* @__PURE__ */ m.jsx("div", { className: "mb-0 mt-1 font-color-class bio-desc markdown-body", children: /* @__PURE__ */ m.jsx(Ig, { remarkPlugins: [H1], children: e }) }) }) }) }), Cb = ({ more_link: e }) => {
-  const t = e.startsWith("http://") || e.startsWith("https://") ? e : `https://${e}`;
-  return /* @__PURE__ */ m.jsx($e, { children: /* @__PURE__ */ m.jsx(Se, { className: "", children: /* @__PURE__ */ m.jsx(ye, { className: "text-center", children: /* @__PURE__ */ m.jsx("h1", { className: "animate bounce", children: /* @__PURE__ */ m.jsxs(
-    "a",
-    {
-      className: "text-decoration-none more-color",
-      href: t,
-      rel: "noopener noreferrer",
-      children: [
-        /* @__PURE__ */ m.jsx("span", { className: "dot", children: "." }),
-        /* @__PURE__ */ m.jsx("span", { className: "dot", children: "." }),
-        /* @__PURE__ */ m.jsx("span", { className: "dot", children: "." })
-      ]
-    }
-  ) }) }) }) });
-};
+const Eb = ({ mark_down_data: e }) => /* @__PURE__ */ m.jsx($e, { children: /* @__PURE__ */ m.jsx(Se, { className: "rounded background-color-body mt-3 p-2", children: /* @__PURE__ */ m.jsx(ye, { children: /* @__PURE__ */ m.jsx("div", { className: "mb-0 mt-1 font-color-class bio-desc markdown-body", children: /* @__PURE__ */ m.jsx(Ig, { remarkPlugins: [H1], children: e }) }) }) }) }), Cb = ({ more_link: e }) => /* @__PURE__ */ m.jsx($e, { children: /* @__PURE__ */ m.jsx(Se, { className: "", children: /* @__PURE__ */ m.jsx(ye, { className: "text-center", children: /* @__PURE__ */ m.jsx("h1", { className: "animate bounce", children: /* @__PURE__ */ m.jsxs(
+  "a",
+  {
+    className: "text-decoration-none more-color",
+    href: e,
+    rel: "noopener noreferrer",
+    children: [
+      /* @__PURE__ */ m.jsx("span", { className: "dot", children: "." }),
+      /* @__PURE__ */ m.jsx("span", { className: "dot", children: "." }),
+      /* @__PURE__ */ m.jsx("span", { className: "dot", children: "." })
+    ]
+  }
+) }) }) }) });
 /*!
  * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
