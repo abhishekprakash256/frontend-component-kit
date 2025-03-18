@@ -19,7 +19,7 @@ const CardExp: React.FC<CardExpProps> = ({ card_para, img_src, card_url, card_ti
   //console.log("CardExp is rendering:", { card_title, card_para, img_src, card_url });
   
 
-  return (
+  return (  
     <Card className="">
       <Card.Img className="card-img-container p-3" variant="top" src={`/images/${img_src}`} />
       <Card.Body>
