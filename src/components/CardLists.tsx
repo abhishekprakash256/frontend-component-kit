@@ -22,9 +22,9 @@ const CardExp: React.FC<CardExpProps> = ({ card_para, img_src, card_url, card_ti
           {card_para}
         </Card.Text>
         <div className="text-center">
-          <Button className="button-custom-color" href={card_url}>
-            Explore
-          </Button>
+        <a href={card_url} style={{ color: 'inherit', textDecoration: 'none' }}>
+          Explore
+        </a>
         </div>
       </Card.Body>
     </Card>
