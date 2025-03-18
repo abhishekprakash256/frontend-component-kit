@@ -11,9 +11,7 @@ interface MoreProps {
 
 const More: React.FC<MoreProps> = ({ more_link }) => {
   // Ensure the link is absolute
-  const normalizedLink = more_link.startsWith('http://') || more_link.startsWith('https://')
-    ? more_link
-    : `https://${more_link}`; // Default to HTTPS if no protocol is provided
+
 
   return (
     <Container>
@@ -22,7 +20,7 @@ const More: React.FC<MoreProps> = ({ more_link }) => {
           <h1 className="animate bounce">
             <a 
               className="text-decoration-none more-color" 
-              href={normalizedLink} 
+              href={more_link} 
               // target="_blank" // Uncomment if you want links to open in a new tab
               rel="noopener noreferrer" // Security best practices
             >
