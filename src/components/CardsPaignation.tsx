@@ -10,13 +10,15 @@ import { Card, Button, Row, Col, Container, Pagination } from "react-bootstrap";
 import '../styles/style.css';
 import '../styles/Card.css';
 import '../styles/PaignatationExp.css'; // the custom import file
-
+import { useNavigate } from "react-router-dom";
 
 
 // Card Component
 
 const CardExp: React.FC<CardExpProps> = ({ card_para, img_src, card_url, card_title }) => {
   //console.log("CardExp is rendering:", { card_title, card_para, img_src, card_url });
+  
+  const navigate = useNavigate();
   return (
     <Card className="">
       <Card.Img className="card-img-container p-3" variant="top" src={`/images/${img_src}`} />
@@ -28,7 +30,7 @@ const CardExp: React.FC<CardExpProps> = ({ card_para, img_src, card_url, card_ti
           {card_para}
         </Card.Text>
         <div className="text-center">
-          <Button className="button-custom-color" href={card_url}>
+          <Button className="button-custom-color" onClick={() => navigate(card_url)} >
             Explore
           </Button>
         </div>
@@ -65,6 +67,8 @@ const CardsPaignation: React.FC<CardExpListProps> = ({ cardData }) => {
       setCurrentPage(page);
     }
   };
+
+
 
   return (
     <Container className="p-0">
