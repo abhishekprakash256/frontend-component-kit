@@ -1,6 +1,7 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import "../styles/style.css"; // Custom CSS
-import { Container, Button, Col, Row } from 'react-bootstrap';
+// At the top of the file, add this line:
+'use client';
+
+import { Button } from 'react-bootstrap';
 
 interface ButtonBarProps {
   button_text: string;
@@ -10,29 +11,22 @@ interface ButtonBarProps {
 const ButtonBar: React.FC<ButtonBarProps> = ({ button_text, link }) => {
 
   const handleClick = () => {
-    // Open link in a new tab (Redirection)
+    // Handle the click event for both redirect and download
     window.open(link, "_blank");
-
-    // Create a temporary <a> tag to trigger the download
+    
     const a = document.createElement("a");
     a.href = link;
-    a.setAttribute("download", ""); // This forces the download
+    a.setAttribute("download", "");
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
   };
 
   return (
-    <Container>
-      <Row className="rounded background-color-body mt-3 p-2">
-        <Col className="text-center">
-          <Button className="button-custom-color m-1" onClick={handleClick}>
-            {button_text}
-          </Button>
-        </Col>
-      </Row>
-    </Container>
+    <Button className="button-custom-color m-1" onClick={handleClick}>
+      {button_text}
+    </Button>
   );
-}
+};
 
 export default ButtonBar;
