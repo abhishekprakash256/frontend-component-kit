@@ -15593,7 +15593,14 @@ const ib = {
   /* @__PURE__ */ m.jsx(ye, {}),
   /* @__PURE__ */ m.jsx(ye, { md: 6, children: /* @__PURE__ */ m.jsx("img", { src: e, className: "img-fluid mt-3 rounded-circle justify-content", alt: "ProfilePic" }) }),
   /* @__PURE__ */ m.jsx(ye, {})
-] }) }), Pb = ({ button_text: e, link: t }) => /* @__PURE__ */ m.jsx($e, { children: /* @__PURE__ */ m.jsx(Se, { className: "rounded background-color-body mt-3 p-2", children: /* @__PURE__ */ m.jsx(ye, { className: "text-center", children: /* @__PURE__ */ m.jsx("a", { href: t, download: !0, children: /* @__PURE__ */ m.jsx(Kt, { className: "button-custom-color m-1", children: e }) }) }) }) }), Rb = () => /* @__PURE__ */ m.jsx($e, { className: "m-0 p-0 text-center", children: /* @__PURE__ */ m.jsx(Se, { className: "rounded background-color-body font-color-class mt-3 m-0", children: /* @__PURE__ */ m.jsx(ye, { className: "text-center p-2 mt-3 mb-3", children: /* @__PURE__ */ m.jsxs("h1", { className: "not-found-title m-2", children: [
+] }) }), Pb = ({ button_text: e, link: t }) => {
+  const n = () => {
+    window.open(t, "_blank");
+    const r = document.createElement("a");
+    r.href = t, r.setAttribute("download", ""), document.body.appendChild(r), r.click(), document.body.removeChild(r);
+  };
+  return /* @__PURE__ */ m.jsx($e, { children: /* @__PURE__ */ m.jsx(Se, { className: "rounded background-color-body mt-3 p-2", children: /* @__PURE__ */ m.jsx(ye, { className: "text-center", children: /* @__PURE__ */ m.jsx(Kt, { className: "button-custom-color m-1", onClick: n, children: e }) }) }) });
+}, Rb = () => /* @__PURE__ */ m.jsx($e, { className: "m-0 p-0 text-center", children: /* @__PURE__ */ m.jsx(Se, { className: "rounded background-color-body font-color-class mt-3 m-0", children: /* @__PURE__ */ m.jsx(ye, { className: "text-center p-2 mt-3 mb-3", children: /* @__PURE__ */ m.jsxs("h1", { className: "not-found-title m-2", children: [
   "OOPS! SEARCH",
   /* @__PURE__ */ m.jsx("br", {}),
   "Results Not Found"
