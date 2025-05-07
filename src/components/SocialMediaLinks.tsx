@@ -13,7 +13,7 @@ import leetcode from "../assets/icons/leetcode-color.svg";
 
 interface MediaLinksProps {
   github_link: string;
-  linkedin_link: string;
+  linkedin_link: string;  
   twitter_link: string;
   leetcode_link: string;
   gitlab_link: string;
