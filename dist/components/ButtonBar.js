@@ -21,6 +21,6 @@ const ButtonBar = ({ button_text, link }) => {
             window.open(link, "_blank");
         }
     };
-    return (_jsx(Container, { children: _jsx(Row, { className: "rounded background-color-body mt-3 p-2", children: _jsx(Col, { className: "text-center", children: _jsx(Button, { className: "button-custom-color m-1", onClick: handleClick, children: button_text }) }) }) }));
+    return (_jsx(Container, { children: _jsx(Row, Object.assign({ className: "rounded background-color-body mt-3 p-2" }, { children: _jsx(Col, Object.assign({ className: "text-center" }, { children: _jsx(Button, Object.assign({ className: "button-custom-color m-1", onClick: handleClick }, { children: button_text })) })) })) }));
 };
 export default ButtonBar;

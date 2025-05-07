@@ -226,15 +226,29 @@ function App() {
 
 
 
-  <SocialMediaLinks
-  github_link = {socialLinks[0]}
-  linkedin_link={socialLinks[1]}
+      <SocialMediaLinks
+  github_link="https://github.com/yourprofile"
+  github_icon="icons/github-color.svg"
+  
+  linkedin_link="https://linkedin.com/in/yourprofile"
+  linkedin_icon="icons/linkedin-color.svg"
+  
   twitter_link=""
-  leetcode_link={socialLinks[3]}
-  gitlab_link={socialLinks[4]}
-  kaggle_link={socialLinks[5]}
+  twitter_icon="twitter.svg"
+  
+  leetcode_link="https://leetcode.com/yourprofile"
+  leetcode_icon="icons/leetcode-color.svg"
+  
+  gitlab_link="https://gitlab.com/yourprofile"
+  gitlab_icon="icons/gitlab-color.svg"
+  
+  kaggle_link="https://kaggle.com/yourprofile"
+  kaggle_icon="icons/kaggle-color.svg"
+  
   medium_link=""
+  medium_icon="icons/medium.svg"
 />
+
 
 <Para description={ description }/>
 
@@ -276,15 +290,32 @@ function App() {
 
 
 
-      <SocialMediaLinks
-  github_link = {socialLinks[0]}
-  linkedin_link={socialLinks[1]}
+    <SocialMediaLinks
+  github_link="https://github.com/yourprofile"
+  github_icon="icons/github-color.svg"
+  
+  linkedin_link="https://linkedin.com/in/yourprofile"
+  linkedin_icon="icons/linkedin-color.svg"
+  
   twitter_link=""
-  leetcode_link={socialLinks[3]}
-  gitlab_link={socialLinks[4]}
-  kaggle_link={socialLinks[5]}
+  twitter_icon="twitter.svg"
+  
+  leetcode_link="https://leetcode.com/yourprofile"
+  leetcode_icon="icons/leetcode-color.svg"
+  
+  gitlab_link="https://gitlab.com/yourprofile"
+  gitlab_icon="icons/gitlab-color.svg"
+  
+  kaggle_link="https://kaggle.com/yourprofile"
+  kaggle_icon="icons/kaggle-color.svg"
+  
   medium_link=""
+  medium_icon="icons/medium.svg"
 />
+
+
+
+
 
 <PaginationExp></PaginationExp>
 
