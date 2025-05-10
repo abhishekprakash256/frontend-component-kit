@@ -8,7 +8,7 @@ interface MediaLinksProps {
   github_link: string;
   github_icon: string;
 
-  linkedin_link: string;
+  linkedin_link: string;    
   linkedin_icon: string;
 
   twitter_link: string;
