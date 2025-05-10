@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import "../styles/style.css"; 
 import "../styles/SocialMediaLinks.css"; 
 
-import { FaGithub, FaLinkedin, FaTwitter, FaGitlab, FaKaggle, FaMedium, FaCode } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaTwitter, FaGitlab, FaKaggle, FaMedium } from 'react-icons/fa';
 import { SiLeetcode } from 'react-icons/si';
 
 interface MediaLinksProps {

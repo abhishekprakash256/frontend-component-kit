@@ -42,19 +42,19 @@ const cardData = [
     {
         card_title: "Card Title 1",
         card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems. ",
-        img_src: "cards.jpg",
+        img_src: "cards.jpg", /* the image file is in the public folder */
         card_url: "https://example.com/card1",
     },
     {
         card_title: "Card Title 2",
         card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
-        img_src: "federated-learning-flow.png",
+        img_src: "federated-learning-flow.png", /* the image file is in the public folder */
         card_url: "https://example.com/card2",
     },
     {
         card_title: "Card Title 3",
         card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
-        img_src: "image_1.png",
+        img_src: "image_1.png", /* the image file is in the public folder */
         card_url: "https://example.com/card3",
     },
     {
@@ -66,13 +66,13 @@ const cardData = [
     {
         card_title: "Card Title 2",
         card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
-        img_src: "federated-learning-flow.png",
+        img_src: "federated-learning-flow.png", /* the image file is in the public folder */
         card_url: "https://example.com/card2",
     },
     {
         card_title: "Card Title 3",
         card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
-        img_src: "image_1.png",
+        img_src: "image_1.png", /* the image file is in the public folder */
         card_url: "https://example.com/card3",
     },
     {
@@ -85,32 +85,32 @@ const cardData = [
 const cardDataTwo = [{
         card_title: "Card Title 1",
         card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems. ",
-        img_src: "cards.jpg",
+        img_src: "cards.jpg", /* the image file is in the public folder */
         card_url: "https://example.com/card1",
     },
     {
         card_title: "Card Title 2",
         card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
-        img_src: "federated-learning-flow.png",
+        img_src: "federated-learning-flow.png", /* the image file is in the public folder */
         card_url: "https://example.com/card2",
     }];
 const Paignation_data = [
     {
         card_title: "Card Title 1",
         card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems. ",
-        img_src: "cards.jpg",
+        img_src: "cards.jpg", /* the image file is in the public folder */
         card_url: "https://example.com/card1",
     },
     {
         card_title: "Card Title 2",
         card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
-        img_src: "federated-learning-flow.png",
+        img_src: "federated-learning-flow.png", /* the image file is in the public folder */
         card_url: "https://example.com/card2",
     },
     {
         card_title: "Card Title 3",
         card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
-        img_src: "image_1.png",
+        img_src: "image_1.png", /* the image file is in the public folder */
         card_url: "https://example.com/card3",
     },
     {
@@ -122,13 +122,13 @@ const Paignation_data = [
     {
         card_title: "Card Title 2",
         card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
-        img_src: "federated-learning-flow.png",
+        img_src: "federated-learning-flow.png", /* the image file is in the public folder */
         card_url: "https://example.com/card2",
     },
     {
         card_title: "Card Title 3",
         card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
-        img_src: "image_1.png",
+        img_src: "image_1.png", /* the image file is in the public folder */
         card_url: "https://example.com/card3",
     },
     {
@@ -146,13 +146,13 @@ const Paignation_data = [
     {
         card_title: "Card Title 2",
         card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
-        img_src: "federated-learning-flow.png",
+        img_src: "federated-learning-flow.png", /* the image file is in the public folder */
         card_url: "https://example.com/card2",
     },
     {
         card_title: "Card Title 3",
         card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
-        img_src: "image_1.png",
+        img_src: "image_1.png", /* the image file is in the public folder */
         card_url: "https://example.com/card3",
     },
     {
@@ -164,19 +164,19 @@ const Paignation_data = [
     {
         card_title: "Card Title 1",
         card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems. ",
-        img_src: "cards.jpg",
+        img_src: "cards.jpg", /* the image file is in the public folder */
         card_url: "https://example.com/card1",
     },
     {
         card_title: "Card Title 2",
         card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
-        img_src: "federated-learning-flow.png",
+        img_src: "federated-learning-flow.png", /* the image file is in the public folder */
         card_url: "https://example.com/card2",
     },
     {
         card_title: "Card Title 3",
         card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
-        img_src: "image_1.png",
+        img_src: "image_1.png", /* the image file is in the public folder */
         card_url: "https://example.com/card3",
     },
     {
@@ -188,11 +188,23 @@ const Paignation_data = [
     {
         card_title: "Card Title 2",
         card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
-        img_src: "federated-learning-flow.png",
+        img_src: "federated-learning-flow.png", /* the image file is in the public folder */
         card_url: "https://example.com/card2",
     },
 ];
 function App() {
-    return (_jsxs(_Fragment, { children: [_jsx(NavBar, {}), _jsxs(CustomBody, { children: [_jsx(HeadingBar, { title: "Abhi's Microcosm" }), _jsx(AboutPic, { image_link: profile_pic }), _jsx(SocialMediaLinks, { github_link: "https://github.com/yourprofile", github_icon: "icons/github-color.svg", linkedin_link: "https://linkedin.com/in/yourprofile", linkedin_icon: "icons/linkedin-color.svg", twitter_link: "", twitter_icon: "twitter.svg", leetcode_link: "https://leetcode.com/yourprofile", leetcode_icon: "icons/leetcode-color.svg", gitlab_link: "https://gitlab.com/yourprofile", gitlab_icon: "icons/gitlab-color.svg", kaggle_link: "https://kaggle.com/yourprofile", kaggle_icon: "icons/kaggle-color.svg", medium_link: "", medium_icon: "icons/medium.svg" }), _jsx(Para, { description: description }), _jsx(HeadingBar, { title: "Skills" }), _jsx(MarkDown, { mark_down_data: skills_data }), _jsx(HeadingBar, { title: "Experience" }), _jsx(MarkDown, { mark_down_data: experience_data1 }), _jsx(MarkDown, { mark_down_data: experience_data2 }), _jsx(MarkDown, { mark_down_data: experience_data3 }), _jsx(MarkDown, { mark_down_data: experience_data4 }), _jsx(HeadingBar, { title: "Tech" }), _jsx(CardLists, { cardData: cardDataTwo }), _jsx(More, { more_link: more_link }), _jsx(HeadingBar, { title: "Project" }), _jsx(CardsPaignation, { cardData: Paignation_data }), _jsx(HeadingBar, { title: "Chat App" }), _jsx(ArticleImage, { image_link: article_image }), _jsx(HeadingBar, { title: "MarkDown Block" }), _jsx(MarkDown, { mark_down_data: mark_down_data }), _jsx(More, { more_link: more_link }), _jsx(Para, { description: description }), _jsx(CardLists, { cardData: cardData }), _jsx(SocialMediaLinks, { github_link: "https://github.com/yourprofile", github_icon: "icons/github-color.svg", linkedin_link: "https://linkedin.com/in/yourprofile", linkedin_icon: "icons/linkedin-color.svg", twitter_link: "", twitter_icon: "twitter.svg", leetcode_link: "https://leetcode.com/yourprofile", leetcode_icon: "icons/leetcode-color.svg", gitlab_link: "https://gitlab.com/yourprofile", gitlab_icon: "icons/gitlab-color.svg", kaggle_link: "https://kaggle.com/yourprofile", kaggle_icon: "icons/kaggle-color.svg", medium_link: "", medium_icon: "icons/medium.svg" }), _jsx(PaginationExp, {}), _jsx(SpaceBlock, {}), "  ", _jsx(ButtonBar, { button_text: "Download Resume", link: resume_link })] }), _jsx(Footer, {})] }));
+    return (_jsxs(_Fragment, { children: [_jsx(NavBar, {}), _jsxs(CustomBody, { children: [_jsx(HeadingBar, { title: "Abhi's Microcosm" }), _jsx(AboutPic, { image_link: profile_pic }), _jsx(SocialMediaLinks, { github_link: "https://github.com/yourprofile", linkedin_link: "https://linkedin.com/in/yourprofile", twitter_link: "", 
+                        //twitter_icon="twitter.svg"
+                        leetcode_link: "https://leetcode.com/yourprofile", gitlab_link: "https://gitlab.com/yourprofile", 
+                        //gitlab_icon="icons/gitlab-color.svg"
+                        kaggle_link: "https://kaggle.com/yourprofile", 
+                        //kaggle_icon="icons/kaggle-color.svg"
+                        medium_link: "" }), _jsx(Para, { description: description }), _jsx(HeadingBar, { title: "Skills" }), _jsx(MarkDown, { mark_down_data: skills_data }), _jsx(HeadingBar, { title: "Experience" }), _jsx(MarkDown, { mark_down_data: experience_data1 }), _jsx(MarkDown, { mark_down_data: experience_data2 }), _jsx(MarkDown, { mark_down_data: experience_data3 }), _jsx(MarkDown, { mark_down_data: experience_data4 }), _jsx(HeadingBar, { title: "Tech" }), _jsx(CardLists, { cardData: cardDataTwo }), _jsx(More, { more_link: more_link }), _jsx(HeadingBar, { title: "Project" }), _jsx(CardsPaignation, { cardData: Paignation_data }), _jsx(HeadingBar, { title: "Chat App" }), _jsx(ArticleImage, { image_link: article_image }), _jsx(HeadingBar, { title: "MarkDown Block" }), _jsx(MarkDown, { mark_down_data: mark_down_data }), _jsx(More, { more_link: more_link }), _jsx(Para, { description: description }), _jsx(CardLists, { cardData: cardData }), _jsx(SocialMediaLinks, { github_link: "https://github.com/yourprofile", linkedin_link: "https://linkedin.com/in/yourprofile", twitter_link: "", 
+                        //twitter_icon="twitter.svg"
+                        leetcode_link: "https://leetcode.com/yourprofile", gitlab_link: "https://gitlab.com/yourprofile", 
+                        //gitlab_icon="icons/gitlab-color.svg"
+                        kaggle_link: "https://kaggle.com/yourprofile", 
+                        //kaggle_icon="icons/kaggle-color.svg"
+                        medium_link: "" }), _jsx(PaginationExp, {}), _jsx(SpaceBlock, {}), "  ", _jsx(ButtonBar, { button_text: "Download Resume", link: resume_link })] }), _jsx(Footer, {})] }));
 }
 export default App;
