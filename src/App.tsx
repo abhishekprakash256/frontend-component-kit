@@ -119,7 +119,7 @@ const Paignation_data = [
   {
     card_title: "Card Title 3",
     card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
-    img_src: "image_1.png",  /* the image file is in the public folder */
+    img_src: "http://localhost:5000/blog/section/project/chat-app/chat-app-icon.png",  /* the image file is in the public folder */
     card_url: "https://example.com/card3",
   },
   {
@@ -137,7 +137,7 @@ const Paignation_data = [
   {
     card_title: "Card Title 3",
     card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
-    img_src: "image_1.png",  /* the image file is in the public folder */
+    img_src: "http://localhost:5000/blog/section/project/chat-app/chat-app-icon.png",  /* the image file is in the public folder */
     card_url: "https://example.com/card3",
   },
   {
@@ -186,7 +186,7 @@ const Paignation_data = [
   {
     card_title: "Card Title 3",
     card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
-    img_src: "image_1.png",  /* the image file is in the public folder */
+    img_src: "http://localhost:5000/blog/section/project/chat-app/chat-app-icon.png",  /* the image file is in the public folder */
     card_url: "https://example.com/card3",
   },
   {
