@@ -13,7 +13,7 @@ const ArticleImage: React.FC<ImageProps> = ({ image_link }) => {
       <Row className="rounded background-color-body mt-3 p-2">
         <Col className="text-center">
 
-        <img src={`/images/${image_link}`} className="img-fluid rounded mt-2 mb-2" alt="Article"></img>
+        <img src={image_link} className="img-fluid rounded mt-2 mb-2" alt="Article"></img>
   
         </Col>
       </Row>
