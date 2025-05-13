@@ -18,6 +18,7 @@ import AboutPic from './components/AboutPic';
 import ButtonBar from './components/ButtonBar';
 
 // import the data 
+// test the image link  http://localhost:5000/blog/section/project/chat-app/chat-app-icon.png
 
 
 const title : string = "Tech";
