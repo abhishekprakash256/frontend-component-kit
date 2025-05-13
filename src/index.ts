@@ -1,6 +1,4 @@
 export {default as ArticleImage} from './components/ArticleImage';
-export { default as CardTemp } from './components/_CardTemp';
-export {default as CardLists} from './components/CardLists';
 export {default as CustomBody} from './components/CustomBody';
 export {default as Footer} from './components/Footer';
 export {default as HeadingBar} from './components/HeadingBar';
