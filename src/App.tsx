@@ -156,7 +156,7 @@ const Paignation_data = [
   {
     card_title: "Card Title 2",
     card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
-    img_src: "federated-learning-flow.png", /* the image file is in the public folder */
+    img_src: "http://localhost:5000/blog/section/project/federated-learning/federated-learning-flow.png", /* the image file is in the public folder */
     card_url: "https://example.com/card2",
   },
   {
@@ -180,7 +180,7 @@ const Paignation_data = [
   {
     card_title: "Card Title 2",
     card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
-    img_src: "federated-learning-flow.png", /* the image file is in the public folder */
+    img_src: "http://localhost:5000/blog/section/project/federated-learning/federated-learning-flow.png", /* the image file is in the public folder */
     card_url: "https://example.com/card2",
   },
   {
