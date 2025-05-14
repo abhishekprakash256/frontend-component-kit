@@ -15490,7 +15490,7 @@ const cv = {
         /* @__PURE__ */ y.jsx(Lt.Link, { className: "nav-link bold-links", href: "/section/tech", children: "Tech" }),
         /* @__PURE__ */ y.jsx(Lt.Link, { className: "nav-link bold-links", href: "/section/project", children: "Project" }),
         /* @__PURE__ */ y.jsx(Lt.Link, { className: "nav-link bold-links", href: "/section/life", children: "Life" }),
-        /* @__PURE__ */ y.jsx(Lt.Link, { className: "nav-link bold-links", href: "/contact", children: "Contact" })
+        /* @__PURE__ */ y.jsx(Lt.Link, { className: "nav-link bold-links", href: "#contact", children: "Contact" })
       ] }),
       /* @__PURE__ */ y.jsxs(Ke, { className: "d-flex", onSubmit: u, children: [
         /* @__PURE__ */ y.jsx(

@@ -101,7 +101,7 @@ const NavBar: React.FC<NavBarProps> = ({ router }) => {
             <Nav.Link className="nav-link bold-links" href="/section/life">
               Life
             </Nav.Link>
-            <Nav.Link className="nav-link bold-links" href="/contact">
+            <Nav.Link className="nav-link bold-links" href="#contact">
               Contact
             </Nav.Link>
           </Nav>
