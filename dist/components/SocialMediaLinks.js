@@ -1,10 +1,19 @@
-import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
-import { Container, Row, Col } from "react-bootstrap";
-import "../styles/style.css";
-import "../styles/SocialMediaLinks.css";
+import { jsx as _jsx } from "react/jsx-runtime";
+import { Container, Row, Col } from 'react-bootstrap';
 import { FaGithub, FaLinkedin, FaTwitter, FaGitlab, FaKaggle, FaMedium } from 'react-icons/fa';
 import { SiLeetcode } from 'react-icons/si';
-const SocialMediaLinks = ({ github_link, linkedin_link, twitter_link, leetcode_link, gitlab_link, kaggle_link, medium_link, }) => {
-    return (_jsx(Container, { children: _jsx(Row, { className: "rounded background-color-body mt-3 p-3 text-center d-flex justify-content-center", children: _jsxs(Col, { className: "col-12 d-flex justify-content-center flex-wrap", children: [github_link && (_jsx("a", { href: github_link, target: "_blank", rel: "noopener noreferrer", children: _jsx(FaGithub, { size: 36, className: "rounded mx-2 icon-custom-color" }) })), linkedin_link && (_jsx("a", { href: linkedin_link, target: "_blank", rel: "noopener noreferrer", children: _jsx(FaLinkedin, { size: 37, className: "rounded mx-2 icon-custom-color" }) })), twitter_link && (_jsx("a", { href: twitter_link, target: "_blank", rel: "noopener noreferrer", children: _jsx(FaTwitter, { size: 36, className: "rounded mx-2 icon-custom-color" }) })), leetcode_link && (_jsx("a", { href: leetcode_link, target: "_blank", rel: "noopener noreferrer", children: _jsx(SiLeetcode, { size: 36, className: "rounded mx-2 icon-custom-color" }) })), gitlab_link && (_jsx("a", { href: gitlab_link, target: "_blank", rel: "noopener noreferrer", children: _jsx(FaGitlab, { size: 36, className: "rounded mx-2 icon-custom-color" }) })), kaggle_link && (_jsx("a", { href: kaggle_link, target: "_blank", rel: "noopener noreferrer", children: _jsx(FaKaggle, { size: 36, className: "rounded mx-2 icon-custom-color" }) })), medium_link && (_jsx("a", { href: medium_link, target: "_blank", rel: "noopener noreferrer", children: _jsx(FaMedium, { size: 36, className: "rounded mx-2 icon-custom-color" }) }))] }) }) }));
+import '../styles/style.css';
+import '../styles/SocialMediaLinks.css';
+const SocialMediaLinks = (props) => {
+    const socialLinks = [
+        { link: props.github_link, icon: _jsx(FaGithub, { className: "social-icon icon-custom-color" }) },
+        { link: props.linkedin_link, icon: _jsx(FaLinkedin, { className: "social-icon icon-custom-color" }) },
+        { link: props.twitter_link, icon: _jsx(FaTwitter, { className: "social-icon icon-custom-color" }) },
+        { link: props.leetcode_link, icon: _jsx(SiLeetcode, { className: "social-icon icon-custom-color" }) },
+        { link: props.gitlab_link, icon: _jsx(FaGitlab, { className: "social-icon icon-custom-color" }) },
+        { link: props.kaggle_link, icon: _jsx(FaKaggle, { className: "social-icon icon-custom-color" }) },
+        { link: props.medium_link, icon: _jsx(FaMedium, { className: "social-icon icon-custom-color" }) }
+    ];
+    return (_jsx(Container, { children: _jsx(Row, { className: "rounded background-color-body mt-3 p-3 text-center d-flex justify-content-center", children: _jsx(Col, { className: "col-12 d-flex justify-content-center flex-wrap", children: socialLinks.map(({ link, icon }, idx) => link && (_jsx("a", { href: link, target: "_blank", rel: "noopener noreferrer", className: "mx-2", children: icon }, idx))) }) }) }));
 };
 export default SocialMediaLinks;
