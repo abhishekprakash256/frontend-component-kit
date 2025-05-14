@@ -17,7 +17,7 @@ If you are developing a production application, we recommend updating the config
 export default tseslint.config({
   languageOptions: {  
     // other options...
-    parserOptions: {
+    parserOptions: {  
       project: ['./tsconfig.node.json', './tsconfig.app.json'],
       tsconfigRootDir: import.meta.dirname,
     },
