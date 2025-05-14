@@ -15644,23 +15644,30 @@ function Sv(e) {
 function Tv(e) {
   return Rt({ attr: { role: "img", viewBox: "0 0 24 24" }, child: [{ tag: "path", attr: { d: "M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z" }, child: [] }] })(e);
 }
-const $v = ({
-  github_link: e,
-  linkedin_link: t,
-  twitter_link: n,
-  leetcode_link: r,
-  gitlab_link: i,
-  kaggle_link: a,
-  medium_link: o
-}) => /* @__PURE__ */ y.jsx($e, { children: /* @__PURE__ */ y.jsx(Te, { className: "rounded background-color-body mt-3 p-3 text-center d-flex justify-content-center", children: /* @__PURE__ */ y.jsxs(ye, { className: "col-12 d-flex justify-content-center flex-wrap", children: [
-  e && /* @__PURE__ */ y.jsx("a", { href: e, target: "_blank", rel: "noopener noreferrer", children: /* @__PURE__ */ y.jsx(vv, { size: 36, className: "rounded mx-2 icon-custom-color" }) }),
-  t && /* @__PURE__ */ y.jsx("a", { href: t, target: "_blank", rel: "noopener noreferrer", children: /* @__PURE__ */ y.jsx(Ev, { size: 37, className: "rounded mx-2 icon-custom-color" }) }),
-  n && /* @__PURE__ */ y.jsx("a", { href: n, target: "_blank", rel: "noopener noreferrer", children: /* @__PURE__ */ y.jsx(Sv, { size: 36, className: "rounded mx-2 icon-custom-color" }) }),
-  r && /* @__PURE__ */ y.jsx("a", { href: r, target: "_blank", rel: "noopener noreferrer", children: /* @__PURE__ */ y.jsx(Tv, { size: 36, className: "rounded mx-2 icon-custom-color" }) }),
-  i && /* @__PURE__ */ y.jsx("a", { href: i, target: "_blank", rel: "noopener noreferrer", children: /* @__PURE__ */ y.jsx(kv, { size: 36, className: "rounded mx-2 icon-custom-color" }) }),
-  a && /* @__PURE__ */ y.jsx("a", { href: a, target: "_blank", rel: "noopener noreferrer", children: /* @__PURE__ */ y.jsx(wv, { size: 36, className: "rounded mx-2 icon-custom-color" }) }),
-  o && /* @__PURE__ */ y.jsx("a", { href: o, target: "_blank", rel: "noopener noreferrer", children: /* @__PURE__ */ y.jsx(Cv, { size: 36, className: "rounded mx-2 icon-custom-color" }) })
-] }) }) }), Bv = () => /* @__PURE__ */ y.jsx($e, { children: /* @__PURE__ */ y.jsx(Te, { className: "mt-3" }) }), Av = ({ card_para: e, img_src: t, card_url: n, card_title: r }) => /* @__PURE__ */ y.jsxs(an, { className: "", children: [
+const $v = (e) => {
+  const t = [
+    { link: e.github_link, icon: /* @__PURE__ */ y.jsx(vv, { className: "social-icon icon-custom-color" }) },
+    { link: e.linkedin_link, icon: /* @__PURE__ */ y.jsx(Ev, { className: "social-icon icon-custom-color" }) },
+    { link: e.twitter_link, icon: /* @__PURE__ */ y.jsx(Sv, { className: "social-icon icon-custom-color" }) },
+    { link: e.leetcode_link, icon: /* @__PURE__ */ y.jsx(Tv, { className: "social-icon icon-custom-color" }) },
+    { link: e.gitlab_link, icon: /* @__PURE__ */ y.jsx(kv, { className: "social-icon icon-custom-color" }) },
+    { link: e.kaggle_link, icon: /* @__PURE__ */ y.jsx(wv, { className: "social-icon icon-custom-color" }) },
+    { link: e.medium_link, icon: /* @__PURE__ */ y.jsx(Cv, { className: "social-icon icon-custom-color" }) }
+  ];
+  return /* @__PURE__ */ y.jsx($e, { children: /* @__PURE__ */ y.jsx(Te, { className: "rounded background-color-body mt-3 p-3 text-center d-flex justify-content-center", children: /* @__PURE__ */ y.jsx(ye, { className: "col-12 d-flex justify-content-center flex-wrap", children: t.map(
+    ({ link: n, icon: r }, i) => n && /* @__PURE__ */ y.jsx(
+      "a",
+      {
+        href: n,
+        target: "_blank",
+        rel: "noopener noreferrer",
+        className: "mx-2",
+        children: r
+      },
+      i
+    )
+  ) }) }) });
+}, Bv = () => /* @__PURE__ */ y.jsx($e, { children: /* @__PURE__ */ y.jsx(Te, { className: "mt-3" }) }), Av = ({ card_para: e, img_src: t, card_url: n, card_title: r }) => /* @__PURE__ */ y.jsxs(an, { className: "", children: [
   /* @__PURE__ */ y.jsx(an.Img, { className: "card-img-container p-3", variant: "top", src: t }),
   /* @__PURE__ */ y.jsxs(an.Body, { children: [
     /* @__PURE__ */ y.jsx("div", { className: "font-color-class text-center card-title", children: /* @__PURE__ */ y.jsx(an.Title, { children: r }) }),

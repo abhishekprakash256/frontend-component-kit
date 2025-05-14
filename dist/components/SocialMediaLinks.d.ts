@@ -1,6 +1,6 @@
 import React from 'react';
-import "../styles/style.css";
-import "../styles/SocialMediaLinks.css";
+import '../styles/style.css';
+import '../styles/SocialMediaLinks.css';
 interface MediaLinksProps {
     github_link: string;
     linkedin_link: string;
