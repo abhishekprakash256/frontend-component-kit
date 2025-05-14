@@ -18,12 +18,17 @@
   }
   
   .nav-link {
-    color: var(--nav-link-color) ;
+    color: var(--nav-link-color) !important;
     margin-right: 5px;
+    text-decoration: none;
   }
   
-  .nav-link:hover {
-    color: var(--nav-link-color) ;
+  .nav-link:hover,
+  .nav-link:active,
+  .nav-link:visited,
+  .nav-link:focus {
+    color: var(--nav-link-color) !important; 
+    text-decoration: none;
   }
   
   .footer-header-color {
