@@ -31,18 +31,20 @@ const Footer: React.FC = () => {
     // { name: ..., email: ..., message: ... }
       
     try {
-      const response = await fetch('https://webhook.site/3c3ed972-a5a3-45ea-88eb-a3019b6187e8', {  //http://localhost:5001/message/submit
+      const response = await fetch('http://localhost:5001/message/submit', {  //http://localhost:5001/message/submit     // https://webhook.site/3c3ed972-a5a3-45ea-88eb-a3019b6187e8
+        
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(data),
+        
       });
   
       if (!response.ok) {
         throw new Error('Failed to submit the form');
       }
-  
+      console.log("Sending data to server:", data);
       const result = await response.json();
       console.log('Form submitted successfully:', result);
       form.reset(); // Optional: reset form after successful submission
