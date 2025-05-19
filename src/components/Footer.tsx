@@ -18,10 +18,12 @@ const Footer: React.FC = () => {
     const form = event.currentTarget;
   
     if (!form.checkValidity()) {
+      console.log("Form validation failed");
       event.stopPropagation();
       setValidated(true);
       return;
     }
+    
   
     const formData = new FormData(form);
     const data: { [key: string]: string } = {};
