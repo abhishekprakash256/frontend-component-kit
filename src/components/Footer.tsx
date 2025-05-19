@@ -13,16 +13,47 @@ const Footer: React.FC = () => {
   const [validated, setValidated] = useState<boolean>(false);
   const currentYear = new Date().getFullYear(); // Dynamically get the current year
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const form = event.currentTarget;
-
+  
     if (!form.checkValidity()) {
       event.stopPropagation();
+      setValidated(true);
+      return;
     }
-
+  
+    const formData = new FormData(form);
+    const data: { [key: string]: string } = {};
+      formData.forEach((value, key) => {
+        data[key] = value.toString();
+      });
+    // { name: ..., email: ..., message: ... }
+      
+    try {
+      const response = await fetch('http://localhost:5001/message/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+  
+      if (!response.ok) {
+        throw new Error('Failed to submit the form');
+      }
+  
+      const result = await response.json();
+      console.log('Form submitted successfully:', result);
+      form.reset(); // Optional: reset form after successful submission
+      setValidated(false);
+    } catch (error) {
+      console.error('Error submitting form:', error);
+    }
+  
     setValidated(true);
   };
+  
 
   return (
     <Container fluid className="footer-header-color ">
@@ -42,6 +73,7 @@ const Footer: React.FC = () => {
               <Form.Control
                 required
                 type="text"
+                name = "name"
                 placeholder="Name"
                 className="me-2 custom-border form-control custom-placeholder"
               />
@@ -60,6 +92,7 @@ const Footer: React.FC = () => {
               <Form.Control
                 required
                 type="email"
+                name = "email"
                 placeholder="Email"
                 className="me-2 custom-border form-control custom-placeholder"
               />
@@ -78,6 +111,7 @@ const Footer: React.FC = () => {
               <Form.Control
                 required
                 as="textarea"
+                name = "message"
                 placeholder="Message"
                 className="me-2 custom-border form-control custom-placeholder message-inp"
               />
