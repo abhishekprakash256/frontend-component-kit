@@ -11,7 +11,7 @@ import "../styles/Footer.css"; // Custom CSS
 
 
 
-
+  
 
 
 const Footer: React.FC = () => {
