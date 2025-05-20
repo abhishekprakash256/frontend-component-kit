@@ -23,7 +23,6 @@ const Footer: React.FC = () => {
     const form = event.currentTarget;
   
     if (!form.checkValidity()) {
-      console.log("Form validation failed");
       event.stopPropagation();
       setValidated(true);
       return;
@@ -53,16 +52,22 @@ const Footer: React.FC = () => {
       console.log("Sending data to server:", data);
       const result = await response.json();
       console.log('Form submitted successfully:', result);
-      form.reset(); // Optional: reset form after successful submission
       
+      //form.reset(); // Optional: reset form after successful submission
+
+      //setValidated(false); // Reset validation state
       setValidated(true);
+      setTimeout(() => {
+        setValidated(false);
+      }, 3000); // 3 seconds
     
     }
      catch (error) {
+
       console.error('Error submitting form:', error);
     }
   
-    setValidated(true);
+   setValidated(true);
   };
   
 
@@ -139,6 +144,10 @@ const Footer: React.FC = () => {
             <Button type="submit" className="button-custom-color">
               Submit
             </Button>
+            <Form.Control.Feedback type="valid">
+              Form submitted successfully!
+            </Form.Control.Feedback>
+
           </Col>
         </Row>
 
