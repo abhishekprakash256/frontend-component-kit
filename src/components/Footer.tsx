@@ -9,6 +9,11 @@ import Col from "react-bootstrap/Col";
 import "../styles/style.css"; // Custom CSS
 import "../styles/Footer.css"; // Custom CSS
 
+
+
+
+
+
 const Footer: React.FC = () => {
   const [validated, setValidated] = useState<boolean>(false);
   const currentYear = new Date().getFullYear(); // Dynamically get the current year
@@ -24,7 +29,6 @@ const Footer: React.FC = () => {
       return;
     }
     
-  
     const formData = new FormData(form);
     const data: { [key: string]: string } = {};
       formData.forEach((value, key) => {
@@ -50,8 +54,11 @@ const Footer: React.FC = () => {
       const result = await response.json();
       console.log('Form submitted successfully:', result);
       form.reset(); // Optional: reset form after successful submission
-      setValidated(false);
-    } catch (error) {
+      
+      setValidated(true);
+    
+    }
+     catch (error) {
       console.error('Error submitting form:', error);
     }
   
