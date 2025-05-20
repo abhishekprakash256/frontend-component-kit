@@ -34,7 +34,7 @@ const Footer: React.FC = () => {
       formData.forEach((value, key) => {
         data[key] = value.toString();
       });
-    // { name: ..., email: ..., message: ... }
+
       
     try {
       const response = await fetch('http://localhost:5001/message/submit', {  //http://localhost:5001/message/submit     // https://webhook.site/3c3ed972-a5a3-45ea-88eb-a3019b6187e8
