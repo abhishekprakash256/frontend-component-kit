@@ -8,6 +8,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "../styles/style.css"; // Custom CSS
 import "../styles/Footer.css"; // Custom CSS
+import { fas } from "@fortawesome/free-solid-svg-icons";
 
 
 
@@ -27,6 +28,7 @@ const Footer: React.FC = () => {
       event.preventDefault();
       event.stopPropagation();
       setValidated(true);
+      return;
     }
     
     const formData = new FormData(form);
@@ -49,7 +51,21 @@ const Footer: React.FC = () => {
         
       });
 
-     
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+
+    else {
+      const responseData = await response.json();
+      console.log('Form submitted successfully:', responseData);
+      alert('Form submitted successfully!');
+      setValidated(false); // clear validation state (if needed)
+      setTimeout(() => {
+        form.reset(); // clear inputs after a short delay
+      }, 1000); // small delay
+  
+    } 
+      
 
     
     }
@@ -135,10 +151,10 @@ const Footer: React.FC = () => {
             <Button type="submit" className="button-custom-color">
               Submit
             </Button>
-            <Form.Control.Feedback type="invalid">
+           { <Form.Control.Feedback type="valid">
               Form submitted successfully!
             </Form.Control.Feedback>
-
+        }
           </Col>
         </Row>
 
