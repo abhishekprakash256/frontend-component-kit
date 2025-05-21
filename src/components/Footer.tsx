@@ -8,21 +8,79 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "../styles/style.css"; // Custom CSS
 import "../styles/Footer.css"; // Custom CSS
+import { fas } from "@fortawesome/free-solid-svg-icons";
 
-const Footer: React.FC = () => {
+
+
+  
+
+
+const Footer: React.FC = () => {  
+
+  const [success, setSuccess] = useState<boolean>(false);
   const [validated, setValidated] = useState<boolean>(false);
   const currentYear = new Date().getFullYear(); // Dynamically get the current year
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();  
+
     const form = event.currentTarget;
-
-    if (!form.checkValidity()) {
+    if (form.checkValidity() === false) {
+      console.log("Form is invalid");
+      event.preventDefault();
       event.stopPropagation();
+      setValidated(true);
+      return;
     }
+    
+    const formData = new FormData(form);
+    const data: { [key: string]: string } = {};
+      formData.forEach((value, key) => {
+        data[key] = value.toString();
+      });
 
-    setValidated(true);
+      
+    try {
+      const response = await fetch('http://localhost:8080/message/submit', {  //http://localhost:5001/message/submit     // https://webhook.site/3c3ed972-a5a3-45ea-88eb-a3019b6187e8
+        
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+
+       
+        
+      });
+
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+
+    else {
+      const responseData = await response.json();
+      console.log('Form submitted successfully:', responseData);
+      setSuccess(true); // ✅ Show success
+      //alert('Form submitted successfully!');
+      setValidated(false); // clear validation state (if needed)
+      setTimeout(() => {
+        form.reset(); // clear inputs after a short delay
+        setSuccess(false); // clear success state
+      }, 2000); // small delay
+  
+    } 
+      
+
+    
+    }
+     catch (error) {
+
+      console.error('Error submitting form:', error);
+    }
+  
+   
   };
+  
 
   return (
     <Container fluid className="footer-header-color ">
@@ -42,6 +100,7 @@ const Footer: React.FC = () => {
               <Form.Control
                 required
                 type="text"
+                name = "name"
                 placeholder="Name"
                 className="me-2 custom-border form-control custom-placeholder"
               />
@@ -60,6 +119,7 @@ const Footer: React.FC = () => {
               <Form.Control
                 required
                 type="email"
+                name = "email"
                 placeholder="Email"
                 className="me-2 custom-border form-control custom-placeholder"
               />
@@ -78,6 +138,7 @@ const Footer: React.FC = () => {
               <Form.Control
                 required
                 as="textarea"
+                name = "message"
                 placeholder="Message"
                 className="me-2 custom-border form-control custom-placeholder message-inp"
               />
@@ -94,6 +155,9 @@ const Footer: React.FC = () => {
             <Button type="submit" className="button-custom-color">
               Submit
             </Button>
+            {success && (
+      <div className="text-success mt-2">Form submitted successfully!</div>
+    )}
           </Col>
         </Row>
 

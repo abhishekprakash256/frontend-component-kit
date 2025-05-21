@@ -1,5 +1,5 @@
 import * as B from "react";
-import Ie, { useRef as Ae, useState as Je, useCallback as Ee, useContext as Ce, useMemo as qe, useEffect as _e, useLayoutEffect as Cl, useReducer as dc, createContext as pc, cloneElement as Fi, forwardRef as hc, useImperativeHandle as mc } from "react";
+import Ie, { useRef as Ae, useState as Qe, useCallback as Ee, useContext as Ce, useMemo as qe, useEffect as _e, useLayoutEffect as Cl, useReducer as dc, createContext as pc, cloneElement as Fi, forwardRef as hc, useImperativeHandle as mc } from "react";
 import Bt from "react-dom";
 function vn(e) {
   return e && e.__esModule && Object.prototype.hasOwnProperty.call(e, "default") ? e.default : e;
@@ -521,7 +521,7 @@ function wc(e, t) {
   return String(e);
 }
 function Ec(e, t, n) {
-  var r = Ae(e !== void 0), i = Je(t), a = i[0], o = i[1], l = e !== void 0, s = r.current;
+  var r = Ae(e !== void 0), i = Qe(t), a = i[0], o = i[1], l = e !== void 0, s = r.current;
   return r.current = l, !l && s && a !== t && o(t), [l ? e : a, Ee(function(u) {
     for (var c = arguments.length, f = new Array(c > 1 ? c - 1 : 0), d = 1; d < c; d++)
       f[d - 1] = arguments[d];
@@ -1284,13 +1284,13 @@ process.env.NODE_ENV !== "production" && j.oneOfType([j.string, j.shape({
 const Pl = Ie.createContext(null);
 var Hc = function(t) {
   return t.scrollTop;
-}, sn = "unmounted", bt = "exited", Qe = "entering", st = "entered", mn = "exiting", ht = /* @__PURE__ */ function(e) {
+}, sn = "unmounted", bt = "exited", Je = "entering", st = "entered", mn = "exiting", ht = /* @__PURE__ */ function(e) {
   Cc(t, e);
   function t(r, i) {
     var a;
     a = e.call(this, r, i) || this;
     var o = i, l = o && !o.isMounting ? r.enter : r.appear, s;
-    return a.appearStatus = null, r.in ? l ? (s = bt, a.appearStatus = Qe) : s = st : r.unmountOnExit || r.mountOnEnter ? s = sn : s = bt, a.state = {
+    return a.appearStatus = null, r.in ? l ? (s = bt, a.appearStatus = Je) : s = st : r.unmountOnExit || r.mountOnEnter ? s = sn : s = bt, a.state = {
       status: s
     }, a.nextCallback = null, a;
   }
@@ -1307,7 +1307,7 @@ var Hc = function(t) {
     var a = null;
     if (i !== this.props) {
       var o = this.state.status;
-      this.props.in ? o !== Qe && o !== st && (a = Qe) : (o === Qe || o === st) && (a = mn);
+      this.props.in ? o !== Je && o !== st && (a = Je) : (o === Je || o === st) && (a = mn);
     }
     this.updateStatus(!1, a);
   }, n.componentWillUnmount = function() {
@@ -1321,7 +1321,7 @@ var Hc = function(t) {
     };
   }, n.updateStatus = function(i, a) {
     if (i === void 0 && (i = !1), a !== null)
-      if (this.cancelNextCallback(), a === Qe) {
+      if (this.cancelNextCallback(), a === Je) {
         if (this.props.unmountOnExit || this.props.mountOnEnter) {
           var o = this.props.nodeRef ? this.props.nodeRef.current : Bt.findDOMNode(this);
           o && Hc(o);
@@ -1343,7 +1343,7 @@ var Hc = function(t) {
       return;
     }
     this.props.onEnter(u, c), this.safeSetState({
-      status: Qe
+      status: Je
     }, function() {
       a.props.onEntering(u, c), a.onTransitionEnd(d, function() {
         a.safeSetState({
@@ -1600,7 +1600,7 @@ ht.defaultProps = {
 };
 ht.UNMOUNTED = sn;
 ht.EXITED = bt;
-ht.ENTERING = Qe;
+ht.ENTERING = Je;
 ht.ENTERED = st;
 ht.EXITING = mn;
 function Vc(e) {
@@ -1771,7 +1771,7 @@ function nf(e, t) {
 const rf = {
   [bt]: "collapse",
   [mn]: "collapsing",
-  [Qe]: "collapsing",
+  [Je]: "collapsing",
   [st]: "collapse show"
 }, af = /* @__PURE__ */ Ie.forwardRef(({
   onEnter: e,
@@ -1973,7 +1973,7 @@ const Ui = /* @__PURE__ */ B.forwardRef((e, t) => {
 });
 Ui.displayName = "Anchor";
 const xf = {
-  [Qe]: "show",
+  [Je]: "show",
   [st]: "show"
 }, _l = /* @__PURE__ */ B.forwardRef(({
   className: e,
@@ -2895,7 +2895,7 @@ class Ji {
 }
 const Nr = (e, t) => ir ? e == null ? (t || Li()).body : (typeof e == "function" && (e = e()), e && "current" in e && (e = e.current), e && ("nodeType" in e || e.getBoundingClientRect) ? e : null) : null;
 function Yf(e, t) {
-  const n = Gi(), [r, i] = Je(() => Nr(e, n == null ? void 0 : n.document));
+  const n = Gi(), [r, i] = Qe(() => Nr(e, n == null ? void 0 : n.document));
   if (!r) {
     const a = Nr(e);
     a && i(a);
@@ -3020,7 +3020,7 @@ function nd({
   onEntered: r,
   transition: i
 }) {
-  const [a, o] = Je(!t);
+  const [a, o] = Qe(!t);
   t && a && o(!1);
   const l = td({
     in: !!t,
@@ -3110,7 +3110,7 @@ const as = /* @__PURE__ */ hc((e, t) => {
     onEntering: z,
     onEntered: F
   } = e, q = id(e, rd);
-  const ae = Gi(), ce = Yf(w), fe = od(S), ve = sf(), h = uf(n), [R, G] = Je(!n), m = Ae(null);
+  const ae = Gi(), ce = Yf(w), fe = od(S), ve = sf(), h = uf(n), [R, G] = Qe(!n), m = Ae(null);
   mc(t, () => fe, [fe]), ir && !h && n && (m.current = Or(ae == null ? void 0 : ae.document)), n && R && G(!1);
   const L = ut(() => {
     if (fe.add(), te.current = Hn(document, "keydown", ee), re.current = Hn(
@@ -3423,7 +3423,7 @@ const ai = /* @__PURE__ */ new WeakMap(), no = (e, t) => {
   return r || (r = t.matchMedia(e), r.refCount = 0, n.set(r.media, r)), r;
 };
 function pd(e, t = typeof window > "u" ? void 0 : window) {
-  const n = no(e, t), [r, i] = Je(() => n ? n.matches : !1);
+  const n = no(e, t), [r, i] = Qe(() => n ? n.matches : !1);
   return jf(() => {
     let a = no(e, t);
     if (!a)
@@ -3483,7 +3483,7 @@ const md = hd({
 })));
 hs.displayName = "OffcanvasBody";
 const gd = {
-  [Qe]: "show",
+  [Je]: "show",
   [st]: "show"
 }, ms = /* @__PURE__ */ B.forwardRef(({
   bsPrefix: e,
@@ -3505,7 +3505,7 @@ const gd = {
   childRef: Gt(n),
   children: (u, c) => /* @__PURE__ */ B.cloneElement(n, {
     ...c,
-    className: Z(t, n.props.className, (u === Qe || u === mn) && `${e}-toggling`, gd[u])
+    className: Z(t, n.props.className, (u === Je || u === mn) && `${e}-toggling`, gd[u])
   })
 })));
 ms.displayName = "OffcanvasToggling";
@@ -3577,7 +3577,7 @@ const xs = /* @__PURE__ */ B.forwardRef(({
 }, $) => {
   const z = Ae();
   e = se(e, "offcanvas");
-  const [F, q] = Je(!1), ae = ar(d), ce = md(a || "xs", "up");
+  const [F, q] = Qe(!1), ae = ar(d), ce = md(a || "xs", "up");
   _e(() => {
     q(a ? o && !ce : o);
   }, [o, a, ce]);
@@ -3810,10 +3810,38 @@ const Dt = Object.assign(ws, {
 });
 Te.displayName = "Row";
 const Rv = ({ image_link: e }) => /* @__PURE__ */ y.jsx($e, { children: /* @__PURE__ */ y.jsx(Te, { className: "rounded background-color-body mt-3 p-2", children: /* @__PURE__ */ y.jsx(ye, { className: "text-center", children: /* @__PURE__ */ y.jsx("img", { src: e, className: "img-fluid rounded mt-2 mb-2", alt: "Article" }) }) }) }), jv = ({ children: e }) => /* @__PURE__ */ y.jsx("div", { className: "custom-body", children: /* @__PURE__ */ y.jsx($e, { children: /* @__PURE__ */ y.jsx(Te, { children: /* @__PURE__ */ y.jsx(ye, { children: e }) }) }) }), _v = () => {
-  const [e, t] = Je(!1), n = (/* @__PURE__ */ new Date()).getFullYear(), r = (i) => {
-    i.preventDefault(), i.currentTarget.checkValidity() || i.stopPropagation(), t(!0);
+  const [e, t] = Qe(!1), [n, r] = Qe(!1), i = (/* @__PURE__ */ new Date()).getFullYear(), a = async (o) => {
+    o.preventDefault();
+    const l = o.currentTarget;
+    if (l.checkValidity() === !1) {
+      console.log("Form is invalid"), o.preventDefault(), o.stopPropagation(), r(!0);
+      return;
+    }
+    const s = new FormData(l), u = {};
+    s.forEach((c, f) => {
+      u[f] = c.toString();
+    });
+    try {
+      const c = await fetch("http://localhost:8080/message/submit", {
+        //http://localhost:5001/message/submit     // https://webhook.site/3c3ed972-a5a3-45ea-88eb-a3019b6187e8
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(u)
+      });
+      if (c.ok) {
+        const f = await c.json();
+        console.log("Form submitted successfully:", f), t(!0), r(!1), setTimeout(() => {
+          l.reset(), t(!1);
+        }, 2e3);
+      } else
+        throw new Error("Network response was not ok");
+    } catch (c) {
+      console.error("Error submitting form:", c);
+    }
   };
-  return /* @__PURE__ */ y.jsx($e, { fluid: !0, className: "footer-header-color ", children: /* @__PURE__ */ y.jsxs(Ke, { noValidate: !0, validated: e, onSubmit: r, children: [
+  return /* @__PURE__ */ y.jsx($e, { fluid: !0, className: "footer-header-color ", children: /* @__PURE__ */ y.jsxs(Ke, { noValidate: !0, validated: n, onSubmit: a, children: [
     /* @__PURE__ */ y.jsx(Te, { id: "contact", className: "text-center", children: /* @__PURE__ */ y.jsx(ye, { className: "text-center", children: /* @__PURE__ */ y.jsx("h1", { className: "bio-font font-color-class heading-responsive-font p-2 mt-3", children: "Contact Me" }) }) }),
     /* @__PURE__ */ y.jsxs(Te, { id: "contact", className: "text-center p-2", children: [
       /* @__PURE__ */ y.jsx(ye, { xs: 12, sm: 12, md: 4 }),
@@ -3823,6 +3851,7 @@ const Rv = ({ image_link: e }) => /* @__PURE__ */ y.jsx($e, { children: /* @__PU
           {
             required: !0,
             type: "text",
+            name: "name",
             placeholder: "Name",
             className: "me-2 custom-border form-control custom-placeholder"
           }
@@ -3839,6 +3868,7 @@ const Rv = ({ image_link: e }) => /* @__PURE__ */ y.jsx($e, { children: /* @__PU
           {
             required: !0,
             type: "email",
+            name: "email",
             placeholder: "Email",
             className: "me-2 custom-border form-control custom-placeholder"
           }
@@ -3855,6 +3885,7 @@ const Rv = ({ image_link: e }) => /* @__PURE__ */ y.jsx($e, { children: /* @__PU
           {
             required: !0,
             as: "textarea",
+            name: "message",
             placeholder: "Message",
             className: "me-2 custom-border form-control custom-placeholder message-inp"
           }
@@ -3863,10 +3894,13 @@ const Rv = ({ image_link: e }) => /* @__PURE__ */ y.jsx($e, { children: /* @__PU
       ] }) }),
       /* @__PURE__ */ y.jsx(ye, { xs: 12, sm: 12, md: 4 })
     ] }),
-    /* @__PURE__ */ y.jsx(Te, { id: "contact", className: "text-center p-2", children: /* @__PURE__ */ y.jsx(ye, { className: "text-center", children: /* @__PURE__ */ y.jsx(kn, { type: "submit", className: "button-custom-color", children: "Submit" }) }) }),
+    /* @__PURE__ */ y.jsx(Te, { id: "contact", className: "text-center p-2", children: /* @__PURE__ */ y.jsxs(ye, { className: "text-center", children: [
+      /* @__PURE__ */ y.jsx(kn, { type: "submit", className: "button-custom-color", children: "Submit" }),
+      e && /* @__PURE__ */ y.jsx("div", { className: "text-success mt-2", children: "Form submitted successfully!" })
+    ] }) }),
     /* @__PURE__ */ y.jsx(Te, { id: "contact", className: "text-center p-2", children: /* @__PURE__ */ y.jsx(ye, { className: "text-center", children: /* @__PURE__ */ y.jsxs("div", { className: "mb-3 mt-3", children: [
       "© ",
-      n,
+      i,
       " Copyright:",
       /* @__PURE__ */ y.jsx("a", { className: "copyright", href: "https://meabhi.me/", children: " meabhi.me" })
     ] }) }) })
@@ -15450,7 +15484,7 @@ const cv = {
   iconName: "moon",
   icon: [384, 512, [127769, 9214], "f186", "M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"]
 }, dv = (e) => typeof window > "u" ? e || {} : e || window.history, Mv = ({ router: e }) => {
-  const [t, n] = Je("light"), [r, i] = Je(!1), [a, o] = Je(""), l = dv(e);
+  const [t, n] = Qe("light"), [r, i] = Qe(!1), [a, o] = Qe(""), l = dv(e);
   _e(() => {
     if (typeof window < "u") {
       const c = localStorage.getItem("theme") || "light";
@@ -15675,7 +15709,7 @@ const $v = (e) => {
     /* @__PURE__ */ y.jsx("div", { className: "text-center", children: /* @__PURE__ */ y.jsx(kn, { className: "button-custom-color", children: /* @__PURE__ */ y.jsx("a", { href: n, style: { color: "inherit", textDecoration: "none" }, children: "Explore" }) }) })
   ] })
 ] }), Uv = ({ cardData: e }) => {
-  const [t, n] = Je(1), r = 9, i = Math.ceil(e.length / r), a = e.slice((t - 1) * r, t * r), o = (l) => {
+  const [t, n] = Qe(1), r = 9, i = Math.ceil(e.length / r), a = e.slice((t - 1) * r, t * r), o = (l) => {
     l >= 1 && l <= i && n(l);
   };
   return /* @__PURE__ */ y.jsxs($e, { className: "p-0", children: [
