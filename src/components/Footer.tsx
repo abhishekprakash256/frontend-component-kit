@@ -16,6 +16,8 @@ import { fas } from "@fortawesome/free-solid-svg-icons";
 
 
 const Footer: React.FC = () => {
+
+  const [success, setSuccess] = useState<boolean>(false);
   const [validated, setValidated] = useState<boolean>(false);
   const currentYear = new Date().getFullYear(); // Dynamically get the current year
 
@@ -58,11 +60,13 @@ const Footer: React.FC = () => {
     else {
       const responseData = await response.json();
       console.log('Form submitted successfully:', responseData);
-      alert('Form submitted successfully!');
+      setSuccess(true); // ✅ Show success
+      //alert('Form submitted successfully!');
       setValidated(false); // clear validation state (if needed)
       setTimeout(() => {
         form.reset(); // clear inputs after a short delay
-      }, 1000); // small delay
+        setSuccess(false); // clear success state
+      }, 2000); // small delay
   
     } 
       
@@ -151,10 +155,9 @@ const Footer: React.FC = () => {
             <Button type="submit" className="button-custom-color">
               Submit
             </Button>
-           { <Form.Control.Feedback type="valid">
-              Form submitted successfully!
-            </Form.Control.Feedback>
-        }
+            {success && (
+      <div className="text-success mt-2">Form submitted successfully!</div>
+    )}
           </Col>
         </Row>
 
