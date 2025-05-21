@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
-  "exports": {   
+  "exports": {
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
@@ -21,6 +21,7 @@
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
+    "axios": "^1.9.0",
     "bootstrap": "^5.3.3",
     "react": "^19.0.0",
     "react-bootstrap": "^2.10.9",

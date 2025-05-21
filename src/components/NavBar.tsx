@@ -19,7 +19,7 @@ const useRouterHook = (router?: any) => {
   return router || window.history;
 };
 
-interface NavBarProps {
+interface NavBarProps {   
   router?: any;
 }
 
