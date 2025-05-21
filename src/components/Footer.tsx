@@ -15,7 +15,7 @@ import { fas } from "@fortawesome/free-solid-svg-icons";
   
 
 
-const Footer: React.FC = () => {
+const Footer: React.FC = () => {  
 
   const [success, setSuccess] = useState<boolean>(false);
   const [validated, setValidated] = useState<boolean>(false);
