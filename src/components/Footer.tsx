@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear(); // Dynamically get the current year
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
+    event.preventDefault();  
     const form = event.currentTarget;
   
     if (!form.checkValidity()) {
@@ -50,8 +50,8 @@ const Footer: React.FC = () => {
         throw new Error('Failed to submit the form');
       }
       console.log("Sending data to server:", data);
-      const result = await response.json();
-      console.log('Form submitted successfully:', result);
+      //const result = await response.json();
+      //console.log('Form submitted successfully:', result);
       
       //form.reset(); // Optional: reset form after successful submission
 
