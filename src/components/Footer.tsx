@@ -41,7 +41,7 @@ const Footer: React.FC = () => {
 
       
     try {
-      const response = await fetch('http://localhost:5001/message/submit', {  //http://localhost:5001/message/submit     // https://webhook.site/3c3ed972-a5a3-45ea-88eb-a3019b6187e8
+      const response = await fetch('http://localhost:8080/message/submit', {  //http://localhost:5001/message/submit     // https://webhook.site/3c3ed972-a5a3-45ea-88eb-a3019b6187e8
         
         method: 'POST',
         headers: {
