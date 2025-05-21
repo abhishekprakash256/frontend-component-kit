@@ -20,12 +20,13 @@ const Footer: React.FC = () => {
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();  
+
     const form = event.currentTarget;
-  
-    if (!form.checkValidity()) {
+    if (form.checkValidity() === false) {
+      console.log("Form is invalid");
+      event.preventDefault();
       event.stopPropagation();
       setValidated(true);
-      return;
     }
     
     const formData = new FormData(form);
@@ -43,23 +44,13 @@ const Footer: React.FC = () => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(data),
+
+       
         
       });
-  
-      if (!response.ok) {
-        throw new Error('Failed to submit the form');
-      }
-      console.log("Sending data to server:", data);
-      //const result = await response.json();
-      //console.log('Form submitted successfully:', result);
-      
-      //form.reset(); // Optional: reset form after successful submission
 
-      //setValidated(false); // Reset validation state
-      setValidated(true);
-      setTimeout(() => {
-        setValidated(false);
-      }, 3000); // 3 seconds
+     
+
     
     }
      catch (error) {
@@ -67,7 +58,7 @@ const Footer: React.FC = () => {
       console.error('Error submitting form:', error);
     }
   
-   setValidated(true);
+   
   };
   
 
@@ -144,7 +135,7 @@ const Footer: React.FC = () => {
             <Button type="submit" className="button-custom-color">
               Submit
             </Button>
-            <Form.Control.Feedback type="valid">
+            <Form.Control.Feedback type="invalid">
               Form submitted successfully!
             </Form.Control.Feedback>
 
