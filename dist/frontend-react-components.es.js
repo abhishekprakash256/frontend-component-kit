@@ -3822,8 +3822,7 @@ const Rv = ({ image_link: e }) => /* @__PURE__ */ y.jsx($e, { children: /* @__PU
       u[f] = c.toString();
     });
     try {
-      const c = await fetch("http://localhost:8080/message/submit", {
-        //http://localhost:5001/message/submit     // https://webhook.site/3c3ed972-a5a3-45ea-88eb-a3019b6187e8
+      const c = await fetch("https://meabhi.me/message/submit", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
