@@ -41,9 +41,12 @@ const Footer: React.FC = () => {
 
       
     try {
-      const response = await fetch('http://localhost:8080/message/submit', {  //http://localhost:5001/message/submit     // https://webhook.site/3c3ed972-a5a3-45ea-88eb-a3019b6187e8
+
+      // the url for production use https://meabhi.me/message/submit
+      // the url for local use http://localhost:5001/message/submit
+      const response = await fetch('https://meabhi.me/message/submit', {  
         
-        method: 'POST',
+        method: 'POST',  
         headers: {
           'Content-Type': 'application/json',
         },

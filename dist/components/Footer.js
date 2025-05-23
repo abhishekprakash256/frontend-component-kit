@@ -29,7 +29,9 @@ const Footer = () => {
             data[key] = value.toString();
         });
         try {
-            const response = await fetch('http://localhost:8080/message/submit', {
+            // the url for production use https://meabhi.me/message/submit
+            // the url for local use http://localhost:5001/message/submit
+            const response = await fetch('https://meabhi.me/message/submit', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
