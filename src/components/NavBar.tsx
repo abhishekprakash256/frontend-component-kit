@@ -92,13 +92,13 @@ const NavBar: React.FC<NavBarProps> = ({ router }) => {
             <Nav.Link className="nav-link bold-links" href="/about">
               About
             </Nav.Link>
-            <Nav.Link className="nav-link bold-links" href="/section/tech">
+            <Nav.Link className="nav-link bold-links" href="blog/section/tech">
               Tech
             </Nav.Link>
-            <Nav.Link className="nav-link bold-links" href="/section/project">
+            <Nav.Link className="nav-link bold-links" href="blog/section/project">
               Project
             </Nav.Link>
-            <Nav.Link className="nav-link bold-links" href="/section/life">
+            <Nav.Link className="nav-link bold-links" href="blog/section/life">
               Life
             </Nav.Link>
             <Nav.Link className="nav-link bold-links" href="#contact">
