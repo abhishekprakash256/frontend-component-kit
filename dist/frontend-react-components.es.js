@@ -15520,9 +15520,9 @@ const cv = {
     /* @__PURE__ */ y.jsxs(jn.Collapse, { id: "navbarScroll", children: [
       /* @__PURE__ */ y.jsxs(Lt, { className: "me-auto my-2 my-lg-0", style: { maxHeight: "150px" }, navbarScroll: !0, children: [
         /* @__PURE__ */ y.jsx(Lt.Link, { className: "nav-link bold-links", href: "/about", children: "About" }),
-        /* @__PURE__ */ y.jsx(Lt.Link, { className: "nav-link bold-links", href: "blog/section/tech", children: "Tech" }),
-        /* @__PURE__ */ y.jsx(Lt.Link, { className: "nav-link bold-links", href: "blog/section/project", children: "Project" }),
-        /* @__PURE__ */ y.jsx(Lt.Link, { className: "nav-link bold-links", href: "blog/section/life", children: "Life" }),
+        /* @__PURE__ */ y.jsx(Lt.Link, { className: "nav-link bold-links", href: "/blog/section/tech", children: "Tech" }),
+        /* @__PURE__ */ y.jsx(Lt.Link, { className: "nav-link bold-links", href: "/blog/section/project", children: "Project" }),
+        /* @__PURE__ */ y.jsx(Lt.Link, { className: "nav-link bold-links", href: "/blog/section/life", children: "Life" }),
         /* @__PURE__ */ y.jsx(Lt.Link, { className: "nav-link bold-links", href: "#contact", children: "Contact" })
       ] }),
       /* @__PURE__ */ y.jsxs(Ke, { className: "d-flex", onSubmit: u, children: [
