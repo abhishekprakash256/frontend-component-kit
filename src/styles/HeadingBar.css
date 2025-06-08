@@ -14,6 +14,10 @@
   }
 
   .heading-responsive-font {
-    font-size: clamp(2rem, 4vw, 3rem);
-  }
-  
+  font-size: clamp(2rem, 4vw, 3rem);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;         /* Ensure it wraps instead of trying to stay on one line */
+  max-width: 100%;             /* Prevents overflow */
+  display: inline-block;       /* Helps with wrapping in some cases */
+}
