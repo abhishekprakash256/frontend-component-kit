@@ -3809,7 +3809,7 @@ const Dt = Object.assign(ws, {
   });
 });
 Te.displayName = "Row";
-const Rv = ({ image_link: e }) => /* @__PURE__ */ y.jsx($e, { children: /* @__PURE__ */ y.jsx(Te, { className: "rounded background-color-body mt-3 p-2", children: /* @__PURE__ */ y.jsx(ye, { className: "text-center", children: /* @__PURE__ */ y.jsx("img", { src: e, className: "img-fluid rounded mt-2 mb-2", alt: "Article" }) }) }) }), jv = ({ children: e }) => /* @__PURE__ */ y.jsx("div", { className: "custom-body", children: /* @__PURE__ */ y.jsx($e, { children: /* @__PURE__ */ y.jsx(Te, { children: /* @__PURE__ */ y.jsx(ye, { children: e }) }) }) }), _v = () => {
+const Rv = ({ image_link: e }) => /* @__PURE__ */ y.jsx($e, { children: /* @__PURE__ */ y.jsx(Te, { className: "rounded background-color-body mt-3 p-2", children: /* @__PURE__ */ y.jsx(ye, { className: "text-center", children: /* @__PURE__ */ y.jsx("img", { src: e, className: "img-fluid rounded mt-2 mb-2 article-image-container p-3", alt: "Article" }) }) }) }), jv = ({ children: e }) => /* @__PURE__ */ y.jsx("div", { className: "custom-body", children: /* @__PURE__ */ y.jsx($e, { children: /* @__PURE__ */ y.jsx(Te, { children: /* @__PURE__ */ y.jsx(ye, { children: e }) }) }) }), _v = () => {
   const [e, t] = Qe(!1), [n, r] = Qe(!1), i = (/* @__PURE__ */ new Date()).getFullYear(), a = async (o) => {
     o.preventDefault();
     const l = o.currentTarget;
@@ -15743,13 +15743,13 @@ const $v = (e) => {
   /* @__PURE__ */ y.jsx(ye, {})
 ] }) }), Vv = ({ button_text: e, link: t }) => {
   const n = (r) => {
-    if (r.preventDefault(), t.match(/\.(jpg|jpeg|png|pdf|docx|txt)$/i)) {
+    if (r.preventDefault(), t == null ? void 0 : t.match(/\.(jpg|jpeg|png|pdf|docx|txt)$/i)) {
       const a = document.createElement("a");
       a.href = t, a.setAttribute("download", ""), document.body.appendChild(a), a.click(), document.body.removeChild(a);
     } else
       window.open(t, "_blank");
   };
-  return /* @__PURE__ */ y.jsx($e, { children: /* @__PURE__ */ y.jsx(Te, { className: "rounded background-color-body mt-3 p-2", children: /* @__PURE__ */ y.jsx(ye, { className: "text-center", children: /* @__PURE__ */ y.jsx(kn, { className: "button-custom-color m-1", onClick: n, children: e }) }) }) });
+  return /* @__PURE__ */ y.jsx($e, { children: t && /* @__PURE__ */ y.jsx(Te, { className: "rounded background-color-body mt-3 p-2", children: /* @__PURE__ */ y.jsx(ye, { className: "text-center", children: /* @__PURE__ */ y.jsx(kn, { className: "button-custom-color m-1", onClick: n, children: e }) }) }) });
 }, Wv = () => /* @__PURE__ */ y.jsx($e, { className: "m-0 p-0 text-center", children: /* @__PURE__ */ y.jsx(Te, { className: "rounded background-color-body font-color-class mt-3 m-0", children: /* @__PURE__ */ y.jsx(ye, { className: "text-center p-2 mt-3 mb-3", children: /* @__PURE__ */ y.jsxs("h1", { className: "not-found-title m-2", children: [
   "OOPS! SEARCH",
   /* @__PURE__ */ y.jsx("br", {}),

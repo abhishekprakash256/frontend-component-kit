@@ -11,7 +11,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
-// ✅ Safe useRouterHook to avoid window issues
+// Safe useRouterHook to avoid window issues
 const useRouterHook = (router) => {
     if (typeof window === 'undefined') {
         return router || {}; // Return a fallback object on the server
