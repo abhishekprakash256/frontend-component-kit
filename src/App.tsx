@@ -291,6 +291,7 @@ function App() {
 
       <Para description={ description }/>
 
+      <ButtonBar button_text="Download Resume" link= "" />
 
 
     <CardsPaignation cardData = {cardData}></CardsPaignation>
