@@ -6,37 +6,39 @@ import { Container, Button, Col, Row} from 'react-bootstrap';
 
 interface ButtonBarProps {
   button_text: string;
-  link: string;
+  link?: string;
 }
 
-const ButtonBar: React.FC<ButtonBarProps> = ({ button_text , link }) => {
+const ButtonBar: React.FC<ButtonBarProps> = ({ button_text, link }) => {
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();
 
-    const isFile = link.match(/\.(jpg|jpeg|png|pdf|docx|txt)$/i); // Check for file extensions to determine if it's a file to download
+    const isFile = link?.match(/\.(jpg|jpeg|png|pdf|docx|txt)$/i);
     if (isFile) {
-      // Trigger download
       const a = document.createElement("a");
-      a.href = link;
-      a.setAttribute("download", ""); // Trigger download
+      a.href = link!;
+      a.setAttribute("download", "");
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
     } else {
-      // Open link in a new tab (for redirection)
       window.open(link, "_blank");
     }
   };
 
   return (
     <Container>
+      {link && (
       <Row className="rounded background-color-body mt-3 p-2">
         <Col className="text-center">
-          <Button className="button-custom-color m-1" onClick={handleClick}>
-            {button_text}
-          </Button>
+          
+            <Button className="button-custom-color m-1" onClick={handleClick}>
+              {button_text}
+            </Button>
+          
         </Col>
       </Row>
+      )}
     </Container>
   );
 };
