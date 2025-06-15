@@ -3809,7 +3809,7 @@ const Dt = Object.assign(ws, {
   });
 });
 Te.displayName = "Row";
-const Rv = ({ image_link: e }) => /* @__PURE__ */ y.jsx($e, { children: /* @__PURE__ */ y.jsx(Te, { className: "rounded background-color-body mt-3 p-2", children: /* @__PURE__ */ y.jsx(ye, { className: "text-center", children: /* @__PURE__ */ y.jsx("img", { src: e, className: "img-fluid rounded mt-2 mb-2 article-image-container p-3", alt: "Article" }) }) }) }), jv = ({ children: e }) => /* @__PURE__ */ y.jsx("div", { className: "custom-body", children: /* @__PURE__ */ y.jsx($e, { children: /* @__PURE__ */ y.jsx(Te, { children: /* @__PURE__ */ y.jsx(ye, { children: e }) }) }) }), _v = () => {
+const Rv = ({ image_link: e }) => /* @__PURE__ */ y.jsx($e, { children: /* @__PURE__ */ y.jsx(Te, { className: "rounded background-color-body mt-3 p-2", children: /* @__PURE__ */ y.jsx(ye, { className: "text-center article-image-container m-2 rounded", children: /* @__PURE__ */ y.jsx("img", { src: e, className: "img-fluid rounded p-2", alt: "Article" }) }) }) }), jv = ({ children: e }) => /* @__PURE__ */ y.jsx("div", { className: "custom-body", children: /* @__PURE__ */ y.jsx($e, { children: /* @__PURE__ */ y.jsx(Te, { children: /* @__PURE__ */ y.jsx(ye, { children: e }) }) }) }), _v = () => {
   const [e, t] = Qe(!1), [n, r] = Qe(!1), i = (/* @__PURE__ */ new Date()).getFullYear(), a = async (o) => {
     o.preventDefault();
     const l = o.currentTarget;

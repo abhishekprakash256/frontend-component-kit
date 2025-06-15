@@ -271,6 +271,8 @@ function App() {
 <HeadingBar title={"Tech"}/>
 
 <ArticleImage image_link={article_image} />
+
+<ArticleImage image_link= "tensor.png" />
       <CardsPaignation cardData = {cardDataTwo}></CardsPaignation>
     
 
