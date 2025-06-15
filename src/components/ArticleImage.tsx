@@ -11,9 +11,9 @@ const ArticleImage: React.FC<ImageProps> = ({ image_link }) => {
   return (
     <Container>
       <Row className="rounded background-color-body mt-3 p-2">
-        <Col className="text-center">
+        <Col className="text-center article-image-container m-2 rounded">
 
-        <img src={image_link} className="img-fluid rounded mt-2 mb-2 article-image-container p-3" alt="Article"></img>
+        <img src={image_link} className="img-fluid rounded p-2" alt="Article"></img>
   
         </Col>
       </Row>
