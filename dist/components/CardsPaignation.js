@@ -12,7 +12,10 @@ import '../styles/PaignatationExp.css'; // the custom import file
 // Card Component
 const CardExp = ({ card_para, img_src, card_url, card_title }) => {
     //console.log("CardExp is rendering:", { card_title, card_para, img_src, card_url });
-    return (_jsxs(Card, { className: "", children: [_jsx(Card.Img, { className: "card-img-container p-3", variant: "top", src: img_src }), _jsxs(Card.Body, { children: [_jsx("div", { className: "font-color-class text-center card-title", children: _jsx(Card.Title, { children: card_title }) }), _jsx(Card.Text, { className: "card-text font-color-class justify-content", children: card_para }), _jsx("div", { className: "text-center", children: _jsx(Button, { className: "button-custom-color", children: _jsx("a", { href: card_url, style: { color: 'inherit', textDecoration: 'none' }, children: "Explore" }) }) })] })] }));
+    // length of the card_title will equal to Federated Learning 18 max if more break the title and display the single word
+    return (_jsxs(Card, { className: "", children: [_jsx(Card.Img, { className: "card-img-container p-3", variant: "top", src: img_src }), _jsxs(Card.Body, { children: [_jsx("div", { className: "font-color-class text-center card-title", children: _jsx(Card.Title, { children: card_title.length > 18
+                                ? card_title.split(" ")[0]
+                                : card_title.split(" ").slice(0, 2).join(" ") }) }), _jsx(Card.Text, { className: "card-text font-color-class justify-content", children: card_para }), _jsx("div", { className: "text-center", children: _jsx(Button, { className: "button-custom-color", children: _jsx("a", { href: card_url, style: { color: 'inherit', textDecoration: 'none' }, children: "Explore" }) }) })] })] }));
 };
 // Main Component with Pagination
 const CardsPaignation = ({ cardData }) => {
