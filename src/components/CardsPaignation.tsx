@@ -17,14 +17,20 @@ import '../styles/PaignatationExp.css'; // the custom import file
 
 const CardExp: React.FC<CardExpProps> = ({ card_para, img_src, card_url, card_title }) => {
   //console.log("CardExp is rendering:", { card_title, card_para, img_src, card_url });
-  
+  // length of the card_title will equal to Federated Learning 18 max if more break the title and display the single word
 
   return (  
     <Card className="">
       <Card.Img className="card-img-container p-3" variant="top" src={img_src} />
       <Card.Body>
         <div className="font-color-class text-center card-title">
-          <Card.Title>{card_title}</Card.Title>
+          
+          <Card.Title>
+            {card_title.length > 18
+              ? card_title.split(" ")[0]
+              : card_title.split(" ").slice(0, 2).join(" ")}
+          </Card.Title>
+
         </div>
         <Card.Text className="card-text font-color-class justify-content">
           {card_para}

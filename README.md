@@ -54,7 +54,7 @@ After the tsc -b command copy the styles dir and the asset in dist as well
 npm install git@github.com:abhishekprakash256/front-end-component-kit.git#branch  (if branch needed)
 ```
 
-### Notes 
+### Notes  
 
 ✅ Vite = Client-Side Rendering (No SSR) → Works normally
 ✅ Next.js = Server-Side Rendering (SSR) + Hydration → Needs careful handling
