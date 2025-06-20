@@ -15703,7 +15703,7 @@ const $v = (e) => {
 }, Bv = () => /* @__PURE__ */ y.jsx($e, { children: /* @__PURE__ */ y.jsx(Te, { className: "mt-3" }) }), Av = ({ card_para: e, img_src: t, card_url: n, card_title: r }) => /* @__PURE__ */ y.jsxs(an, { className: "", children: [
   /* @__PURE__ */ y.jsx(an.Img, { className: "card-img-container p-3", variant: "top", src: t }),
   /* @__PURE__ */ y.jsxs(an.Body, { children: [
-    /* @__PURE__ */ y.jsx("div", { className: "font-color-class text-center card-title", children: /* @__PURE__ */ y.jsx(an.Title, { children: r }) }),
+    /* @__PURE__ */ y.jsx("div", { className: "font-color-class text-center card-title", children: /* @__PURE__ */ y.jsx(an.Title, { children: r.length > 18 ? r.split(" ")[0] : r.split(" ").slice(0, 2).join(" ") }) }),
     /* @__PURE__ */ y.jsx(an.Text, { className: "card-text font-color-class justify-content", children: e }),
     /* @__PURE__ */ y.jsx("div", { className: "text-center", children: /* @__PURE__ */ y.jsx(kn, { className: "button-custom-color", children: /* @__PURE__ */ y.jsx("a", { href: n, style: { color: "inherit", textDecoration: "none" }, children: "Explore" }) }) })
   ] })

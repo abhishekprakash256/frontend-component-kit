@@ -124,7 +124,7 @@ const Paignation_data = [
     card_url: "https://example.com/card3",
   },
   {
-    card_title: "Card Title 4",
+    card_title: "Neural Transfer",
     card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
     img_src: "image_1.png",
     card_url: "https://example.com/card4",
