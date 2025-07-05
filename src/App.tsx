@@ -14,6 +14,7 @@ import React from "react";
 import CardsPaignation from './components/CardsPaignation';
 import AboutPic from './components/AboutPic';
 import ButtonBar from './components/ButtonBar';
+import SkillsBox  from './components/SkillsBox';
 
 
 // import the data 
@@ -323,6 +324,8 @@ function App() {
   medium_link=""
   //medium_icon="icons/medium.svg"
 />
+
+<SkillsBox></SkillsBox>
 
 
 
