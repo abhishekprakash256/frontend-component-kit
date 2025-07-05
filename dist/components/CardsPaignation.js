@@ -9,7 +9,7 @@ import { Card, Button, Row, Col, Container, Pagination } from "react-bootstrap";
 import '../styles/style.css';
 import '../styles/Card.css';
 import '../styles/PaignatationExp.css'; // the custom import file
-// Card Component
+// Card Component  
 const CardExp = ({ card_para, img_src, card_url, card_title }) => {
     //console.log("CardExp is rendering:", { card_title, card_para, img_src, card_url });
     // length of the card_title will equal to Federated Learning 18 max if more break the title and display the single word

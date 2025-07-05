@@ -14,6 +14,7 @@ import SpaceBlock from './components/SpaceBlock';
 import CardsPaignation from './components/CardsPaignation';
 import AboutPic from './components/AboutPic';
 import ButtonBar from './components/ButtonBar';
+import SkillsBox from './components/SkillsBox';
 // import the data 
 // test the image link  http://localhost:5000/blog/section/project/chat-app/chat-app-icon.png
 const title = "Tech";
@@ -204,6 +205,6 @@ function App() {
                         //gitlab_icon="icons/gitlab-color.svg"
                         kaggle_link: "https://kaggle.com/yourprofile", 
                         //kaggle_icon="icons/kaggle-color.svg"
-                        medium_link: "" }), _jsx(SpaceBlock, {}), "  ", _jsx(ButtonBar, { button_text: "Download Resume", link: resume_link })] }), _jsx(Footer, {})] }));
+                        medium_link: "" }), _jsx(HeadingBar, { title: "Skills" }), _jsx(SkillsBox, {}), _jsx(ButtonBar, { button_text: "Download Resume", link: resume_link }), _jsx(SpaceBlock, {})] }), _jsx(Footer, {})] }));
 }
 export default App;

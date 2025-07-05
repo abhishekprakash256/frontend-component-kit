@@ -14,6 +14,7 @@ import React from "react";
 import CardsPaignation from './components/CardsPaignation';
 import AboutPic from './components/AboutPic';
 import ButtonBar from './components/ButtonBar';
+import SkillsBox  from './components/SkillsBox';
 
 
 // import the data 
@@ -323,16 +324,17 @@ function App() {
   medium_link=""
   //medium_icon="icons/medium.svg"
 />
+<HeadingBar title={"Skills"}/> 
+<SkillsBox></SkillsBox>
 
 
 
-
-
-
-  <SpaceBlock></SpaceBlock>  { /*SpaceBlock component to create a space between the social media links and the footer */ }
+  { /*SpaceBlock component to create a space between the social media links and the footer */ }
 
 
     <ButtonBar button_text="Download Resume" link={resume_link} />
+
+     <SpaceBlock></SpaceBlock> 
       </CustomBody>
 
       <Footer></Footer>
