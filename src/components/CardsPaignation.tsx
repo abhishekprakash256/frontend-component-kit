@@ -13,7 +13,7 @@ import '../styles/PaignatationExp.css'; // the custom import file
 
 
 
-// Card Component
+// Card Component  
 
 const CardExp: React.FC<CardExpProps> = ({ card_para, img_src, card_url, card_title }) => {
   //console.log("CardExp is rendering:", { card_title, card_para, img_src, card_url });
