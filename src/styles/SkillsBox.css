@@ -7,6 +7,13 @@
   }
   
 
+  
+  .icon-custom-color:hover {
+    
+      color: var(--button-hover) !important ; /* Font color on hover */
+  }
+  
+
   .social-icon {
     border-radius: 0.375rem;
     color: var(--icon-color); /* Customize or replace as needed */
@@ -36,15 +43,8 @@
     }
   }
 
-
-
-.no-hover-icons {
-  transform: none !important;
+  .social-icon:hover {
+    transform: scale(1.1);
+  }
   
-}
 
-
-.no-hover-icons:hover {
-
-    color: var(--light-blue) !important;
-}
