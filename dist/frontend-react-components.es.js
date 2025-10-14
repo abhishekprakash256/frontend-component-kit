@@ -3822,7 +3822,7 @@ const o6 = ({ image_link: e }) => /* @__PURE__ */ m.jsx(Le, { children: /* @__PU
       c[f] = u.toString();
     });
     try {
-      const u = await fetch("https://meabhi.me/message/submit", {
+      const u = await fetch("https://api.meabhi.me/static-media-server/v1/user/message/submit", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

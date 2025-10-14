@@ -31,7 +31,9 @@ const Footer = () => {
         try {
             // the url for production use https://meabhi.me/message/submit
             // the url for local use http://localhost:5001/message/submit
-            const response = await fetch('https://meabhi.me/message/submit', {
+            //https://api.meabhi.me/{microservice}/v{version}/{resource}/{optional-action}
+            // the url now https://api.meabhi.me/static-media-server/v1/user/message/submit
+            const response = await fetch('https://api.meabhi.me/static-media-server/v1/user/message/submit', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
