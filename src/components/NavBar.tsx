@@ -37,7 +37,7 @@ const NavBar: React.FC<NavBarProps> = ({ router }) => {
 
 
 
-  // ✅ Ensure safe navigation handling
+  // Ensure safe navigation handling
   const navigation = useRouterHook(router);
 
   useEffect(() => {
@@ -71,7 +71,7 @@ const NavBar: React.FC<NavBarProps> = ({ router }) => {
   };
 
   if (!isThemeInitialized) {
-    return null; // ✅ Prevent rendering before initialization
+    return null; // Prevent rendering before initialization
   }
 
   return (
