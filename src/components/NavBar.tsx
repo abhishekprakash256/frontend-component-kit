@@ -11,6 +11,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 
+
 // Safe useRouterHook to avoid window issues
 const useRouterHook = (router?: any) => {
   if (typeof window === 'undefined') {
@@ -18,6 +19,9 @@ const useRouterHook = (router?: any) => {
   }
   return router || window.history;
 };
+
+
+
 
 interface NavBarProps {     
   router?: any;
@@ -27,6 +31,11 @@ const NavBar: React.FC<NavBarProps> = ({ router }) => {
   const [theme, setTheme] = useState('light');
   const [isThemeInitialized, setIsThemeInitialized] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
+
+
+
+
+
 
   // ✅ Ensure safe navigation handling
   const navigation = useRouterHook(router);
@@ -104,6 +113,12 @@ const NavBar: React.FC<NavBarProps> = ({ router }) => {
             <Nav.Link className="nav-link bold-links" href="#contact">
               Contact
             </Nav.Link>
+            <Nav.Link className="nav-link bold-links" href="/login">
+              Login
+            </Nav.Link>
+
+
+
           </Nav>
 
           {/* Search Form */}
